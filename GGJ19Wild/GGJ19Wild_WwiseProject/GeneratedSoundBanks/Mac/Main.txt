@@ -4,11 +4,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	3390488028	Play_DruidBounce_Theme			\Default Work Unit\Play_DruidBounce_Theme	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	387470734	DruidBounce_Theme	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\DruidBounce_Theme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main Theme\DruidBounce_Theme\DruidBounce_Theme		22755664
 	446847787	Draw_Card_04	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Card Equip-1eqa_11-67_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Draw_Card\Draw_Card_04		32832
 	591450367	Draw_Card_03	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Card Equip-1eqa_07-15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Draw_Card\Draw_Card_03		38976
 	655787122	Place_Card_01	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Card Equip-1eqa_11-55_2EE9E8AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Place_Card\Place_Card_01		15708
 	669135159	Draw_Card_02	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Card Equip-1eqa_11-41_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Draw_Card\Draw_Card_02		27520
 	675496678	Place_Card_02	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Card Equip-1eqa_08-17_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Place_Card\Place_Card_02		34880
 	780261474	Draw_Card_01	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Card Equip-1eqa_11-61_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Draw_Card\Draw_Card_01		32064
+	974800209	DruidBounce2	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\DruidBounce2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main Theme\DruidBounce_Theme\DruidBounce2		31222864
 

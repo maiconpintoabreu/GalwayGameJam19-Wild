@@ -15,7 +15,7 @@
 					<ChildrenList>
 						<MusicSegment Name="DruidBounce_Theme" ID="{49DD5370-C400-4643-86B2-4DCD4FA9DA21}" ShortID="494122204">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="129000"/>
+								<Property Name="EndPosition" Type="Real64" Value="465896.507936508"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-12</Value>
@@ -31,23 +31,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="DruidBounce_Theme" ID="{327C544C-D874-4369-994B-AD2227B18FEE}" ShortID="1044386077">
+								<MusicTrack Name="DruidBounce2" ID="{FADCFA0B-5FE2-4584-A460-65D7A2359810}" ShortID="925459046">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3CD76364-A979-4C7E-A5EF-115E0F1E2637}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="DruidBounce_Theme" ID="{F68D2FF0-AF5E-4598-8884-7638E214C72A}">
+										<AudioFileSource Name="DruidBounce2" ID="{009FA8E5-F822-4431-B69A-F25728D3C504}">
 											<Language>SFX</Language>
-											<AudioFile>DruidBounce_Theme.wav</AudioFile>
+											<AudioFile>DruidBounce2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="387470734"/>
+												<MediaID ID="974800209"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<TransitionList>
-										<MusicTransition Name="Root" ID="{38FF642C-E0EA-4370-A8E5-CA7BF21C965B}">
+										<MusicTransition Name="Root" ID="{9EEFA250-53AD-4857-B1D3-1E85F6E53DD4}">
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
@@ -58,18 +58,18 @@
 										<ObjectList Name="Sequences">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{EFD0DC96-964D-4B10-A793-6FD4D01B0172}">
+													<MusicTrackSequence Name="" ID="{C1B4AD45-A105-432B-8856-1E5EBAF4BE72}">
 														<ObjectLists>
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="DruidBounce_Theme" ID="{5BD0A844-D09E-42EA-9D95-26136E5C30CF}">
+																		<MusicClip Name="DruidBounce2" ID="{33538F90-A271-4A25-9792-A98C901DF70D}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="129000"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="177000"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="DruidBounce_Theme" ID="{F68D2FF0-AF5E-4598-8884-7638E214C72A}"/>
+																			<AudioSourceRef Name="DruidBounce2" ID="{009FA8E5-F822-4431-B69A-F25728D3C504}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>
