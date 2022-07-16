@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &67358583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+  m_PrefabInstance: {fileID: 859142044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195e08a9257f577488f4c09473301885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &79073407
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +712,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      - m_Target: {fileID: 67358583}
         m_TargetAssemblyTypeName: TopDownController, Assembly-CSharp
         m_MethodName: CardSelected
         m_Mode: 5
@@ -712,7 +723,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: TestCard
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &737277183
 MonoBehaviour:
   m_ObjectHideFlags: 0
