@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Draw_Card" ID="{3F5654F9-2D8B-4EA0-A640-94396E1656A2}">
+					<ChildrenList>
+						<Action Name="" ID="{9D0DADD9-D695-4730-94C2-6D21095430F9}" ShortID="219614741">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Draw_Card" ID="{3DBA993C-0E7B-4D0D-8CAA-0F96A897871F}" WorkUnitID="{31BE84A0-F21A-424C-BA62-9DECD099DB5E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Place_Card" ID="{6B250C79-75DC-4EF5-BCF7-ECC7C7753649}">
+					<ChildrenList>
+						<Action Name="" ID="{3311ACD6-ACA3-4CA3-B06C-ECA3E8F3DFF1}" ShortID="189234052">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Place_Card" ID="{D701AC9B-5474-4FE5-8C62-3ED8C99B6292}" WorkUnitID="{31BE84A0-F21A-424C-BA62-9DECD099DB5E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_DruidBounce_Theme" ID="{B657B652-4B15-42B8-9D86-4D5A50797D60}">
+					<ChildrenList>
+						<Action Name="" ID="{79587068-3F44-4113-8679-58A77683DB36}" ShortID="294518773">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DruidBounce_Theme" ID="{49DD5370-C400-4643-86B2-4DCD4FA9DA21}" WorkUnitID="{51B4F312-E4C9-4AAE-B525-005B42EA2EFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -9,6 +9,7 @@ public class TopDownController : MonoBehaviour
     //public bool isAlive = true;
 
     private Animator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,7 @@ public class TopDownController : MonoBehaviour
         {
             if (this.card == "TestCard")
             {
-
+                
                 dir.x = -5;
                 animator.SetInteger("Direction", 3);
             }

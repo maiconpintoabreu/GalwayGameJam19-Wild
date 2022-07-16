@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>/Users/matt/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/repos/GalwayGameJam19-Wild/GGJ19Wild/GGJ19Wild_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/matt/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/repos/GalwayGameJam19-Wild/GGJ19Wild/GGJ19Wild_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/matt/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/repos/GalwayGameJam19-Wild/GGJ19Wild/GGJ19Wild_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/matt/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/repos/GalwayGameJam19-Wild/GGJ19Wild/GGJ19Wild_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="2968421634">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="786675197" Name="Play_Draw_Card" ObjectPath="\Events\Default Work Unit\Play_Draw_Card" DurationType="OneShot" DurationMin="0.286" DurationMax="0.383134">
+					<IncludedMemoryFiles>
+						<File Id="446847787" Language="SFX">
+							<ShortName>Card Equip-1eqa_11-67.wav</ShortName>
+							<Path>SFX/Card Equip-1eqa_11-67_10C4C929.wem</Path>
+						</File>
+						<File Id="591450367" Language="SFX">
+							<ShortName>Card Equip-1eqa_07-15.wav</ShortName>
+							<Path>SFX/Card Equip-1eqa_07-15_10C4C929.wem</Path>
+						</File>
+						<File Id="669135159" Language="SFX">
+							<ShortName>Card Equip-1eqa_11-41.wav</ShortName>
+							<Path>SFX/Card Equip-1eqa_11-41_10C4C929.wem</Path>
+						</File>
+						<File Id="780261474" Language="SFX">
+							<ShortName>Card Equip-1eqa_11-61.wav</ShortName>
+							<Path>SFX/Card Equip-1eqa_11-61_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3390488028" Name="Play_DruidBounce_Theme" ObjectPath="\Events\Default Work Unit\Play_DruidBounce_Theme" DurationType="OneShot" DurationMin="129." DurationMax="129.">
+					<IncludedMemoryFiles>
+						<File Id="387470734" Language="SFX">
+							<ShortName>DruidBounce_Theme.wav</ShortName>
+							<Path>SFX/DruidBounce_Theme_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1633448952" Name="Play_Place_Card" ObjectPath="\Events\Default Work Unit\Play_Place_Card" DurationType="OneShot" DurationMin="0.145188" DurationMax="0.40708">
+					<IncludedMemoryFiles>
+						<File Id="655787122" Language="SFX">
+							<ShortName>Card Equip-1eqa_11-55.wav</ShortName>
+							<Path>SFX/Card Equip-1eqa_11-55_2EE9E8AD.wem</Path>
+						</File>
+						<File Id="675496678" Language="SFX">
+							<ShortName>Card Equip-1eqa_08-17.wav</ShortName>
+							<Path>SFX/Card Equip-1eqa_08-17_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,6 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{51B4F312-E4C9-4AAE-B525-005B42EA2EFA}" SchemaVersion="103">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{51B4F312-E4C9-4AAE-B525-005B42EA2EFA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{51B4F312-E4C9-4AAE-B525-005B42EA2EFA}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="Main Theme" ID="{9874959D-7B63-4E9A-A787-16F3C3693B12}" ShortID="253251225">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{19BB27B7-0A9B-4D15-B805-A649968F7202}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3CD76364-A979-4C7E-A5EF-115E0F1E2637}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="DruidBounce_Theme" ID="{49DD5370-C400-4643-86B2-4DCD4FA9DA21}" ShortID="494122204">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="129000"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{19BB27B7-0A9B-4D15-B805-A649968F7202}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3CD76364-A979-4C7E-A5EF-115E0F1E2637}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="DruidBounce_Theme" ID="{327C544C-D874-4369-994B-AD2227B18FEE}" ShortID="1044386077">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3CD76364-A979-4C7E-A5EF-115E0F1E2637}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DruidBounce_Theme" ID="{F68D2FF0-AF5E-4598-8884-7638E214C72A}">
+											<Language>SFX</Language>
+											<AudioFile>DruidBounce_Theme.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="387470734"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{38FF642C-E0EA-4370-A8E5-CA7BF21C965B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{EFD0DC96-964D-4B10-A793-6FD4D01B0172}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="DruidBounce_Theme" ID="{5BD0A844-D09E-42EA-9D95-26136E5C30CF}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="129000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="DruidBounce_Theme" ID="{F68D2FF0-AF5E-4598-8884-7638E214C72A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{B47849EE-7BCE-41E6-8D71-4F384055DD62}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{216F1046-4365-4D76-ADFD-847A16B7642D}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="129000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{0A27B035-C9FA-4116-B16C-E65257D937FB}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{0982B78A-EC49-4178-AAAA-E2CE90AF6191}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
