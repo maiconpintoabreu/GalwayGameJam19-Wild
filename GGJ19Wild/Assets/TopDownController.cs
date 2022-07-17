@@ -69,6 +69,9 @@ public class TopDownController : MonoBehaviour
                     GetComponent<Rigidbody2D>().velocity = dir;
 
                     break;
+                
+                dir.x = -5;
+                animator.SetInteger("Direction", 3);
             }
         }
         else
