@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class TopDownController : MonoBehaviour
 {
-    public string card;
+    [System.Serializable]
+    public struct Cards
+    {
+        public string cardName;
+        public string cardAction;
+        public string description;
+        public float number;
+        public Sprite sprite;
+    }
+    public Cards card;
     private bool isMoving = false;
     //public bool isAlive = true;
 
     private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,18 +31,50 @@ public class TopDownController : MonoBehaviour
         Vector2 dir = Vector2.zero;
         if (this.isMoving)
         {
-            if (this.card == "TestCard")
+            switch(this.card.cardAction)
             {
+                case "WalkRight":
 
-                dir.x = -5;
-                animator.SetInteger("Direction", 3);
+                    dir.x = this.card.number;
+                    animator.SetInteger("Direction", 2);
+                    dir.Normalize();
+                    animator.SetBool("IsMoving", dir.magnitude > 0);
+                    GetComponent<Rigidbody2D>().velocity = dir;
+
+                    break;
+                case "WalkLeft":
+
+                    dir.x = this.card.number * (-1);
+                    animator.SetInteger("Direction", 3);
+                    dir.Normalize();
+                    animator.SetBool("IsMoving", dir.magnitude > 0);
+                    GetComponent<Rigidbody2D>().velocity = dir;
+
+                    break;
+                case "WalkUp":
+
+                    dir.y = this.card.number;
+                    animator.SetInteger("Direction", 0);
+                    dir.Normalize();
+                    animator.SetBool("IsMoving", dir.magnitude > 0);
+                    GetComponent<Rigidbody2D>().velocity = dir;
+
+                    break;
+                case "WalkDown":
+
+                    dir.y = this.card.number * (-1);
+                    animator.SetInteger("Direction", 1);
+                    dir.Normalize();
+                    animator.SetBool("IsMoving", dir.magnitude > 0);
+                    GetComponent<Rigidbody2D>().velocity = dir;
+
+                    break;
             }
-            dir.Normalize();
-            animator.SetBool("IsMoving", dir.magnitude > 0);
-            GetComponent<Rigidbody2D>().velocity = dir;
         }
         else
         {
+            dir.Normalize();
+            animator.SetBool("IsMoving", dir.magnitude > 0);
             GetComponent<Rigidbody2D>().velocity = dir;
         }
 
@@ -43,7 +85,6 @@ public class TopDownController : MonoBehaviour
     public void CardSelected(string card)
     {
         Debug.Log(card);
-        this.card = card;
         this.isMoving = true;
         StartCoroutine(WaitForCasting());
         Debug.Log(card);
