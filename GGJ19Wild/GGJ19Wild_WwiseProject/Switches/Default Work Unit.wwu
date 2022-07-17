@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{83E51EDD-A32B-4A73-B321-CA26CA95CDCC}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{83E51EDD-A32B-4A73-B321-CA26CA95CDCC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{83E51EDD-A32B-4A73-B321-CA26CA95CDCC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="AnimalForm" ID="{8B437802-45DB-4B84-82F7-382037C0176A}">
+					<ChildrenList>
+						<Switch Name="Deer" ID="{3002A67B-BF9F-434B-892A-12FDF6C3B837}"/>
+						<Switch Name="Bird" ID="{11D95D6A-92E8-40DB-B03A-0759C553D4C5}"/>
+						<Switch Name="Seal" ID="{01FBEC1F-A57C-44FC-B2F7-D6BC7B7B4B93}"/>
+						<Switch Name="Fox" ID="{0F255DF1-3324-478E-B655-13FE8E6F382C}"/>
+						<Switch Name="Statue" ID="{09BED06A-F5AC-4691-AAD8-52CD95154A99}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
