@@ -8,7 +8,12 @@
 		<ExternalSourcesOutputRoot>/Users/matt/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/repos/GalwayGameJam19-Wild/GGJ19Wild/GGJ19Wild_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="974800209" Language="SFX">
+			<ShortName>DruidBounce2.wav</ShortName>
+			<Path>SFX/DruidBounce2_D79FB2B7.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
@@ -16,7 +21,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="665787116">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3481511690">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -42,22 +47,30 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3390488028" Name="Play_DruidBounce_Theme" ObjectPath="\Events\Default Work Unit\Play_DruidBounce_Theme" DurationType="OneShot" DurationMin="177." DurationMax="177.">
-					<IncludedMemoryFiles>
+					<ReferencedStreamedFiles>
 						<File Id="974800209" Language="SFX">
 							<ShortName>DruidBounce2.wav</ShortName>
 							<Path>SFX/DruidBounce2_D79FB2B7.wem</Path>
 						</File>
-					</IncludedMemoryFiles>
+					</ReferencedStreamedFiles>
 				</Event>
 				<Event Id="1633448952" Name="Play_Place_Card" ObjectPath="\Events\Default Work Unit\Play_Place_Card" DurationType="OneShot" DurationMin="0.145188" DurationMax="0.40708">
 					<IncludedMemoryFiles>
 						<File Id="655787122" Language="SFX">
 							<ShortName>Card Equip-1eqa_11-55.wav</ShortName>
-							<Path>SFX/Card Equip-1eqa_11-55_2EE9E8AD.wem</Path>
+							<Path>SFX/Card Equip-1eqa_11-55_CDDF4E94.wem</Path>
 						</File>
 						<File Id="675496678" Language="SFX">
 							<ShortName>Card Equip-1eqa_08-17.wav</ShortName>
 							<Path>SFX/Card Equip-1eqa_08-17_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1456305894" Name="Play_Transform_Player" ObjectPath="\Events\Default Work Unit\Play_Transform_Player" DurationType="OneShot" DurationMin="0.782158" DurationMax="0.782158">
+					<IncludedMemoryFiles>
+						<File Id="980157040" Language="SFX">
+							<ShortName>Magic Poof.wav</ShortName>
+							<Path>SFX/Magic Poof_794A33FC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

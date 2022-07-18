@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: b34aa397e24c584cb29287d8e6ca189f
     GuidInternal: 
-    m_lastTime: -8585436014944775808
+    m_lastTime: -8585434654674775808
     List:
     - name: Main
       guid: 9add598b56148c4fbf0218f8bd93cbc9
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: bbc14059b1abc1438a0d024ccd4556a0
     GuidInternal: 
-    m_lastTime: -8585435988044775808
+    m_lastTime: -8585434654674775808
     List:
     - name: Play_Draw_Card
       guid: f954563f8b2da04ea64094396e1656a2
@@ -147,6 +147,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.40708
       minDuration: 0.145188
+    - name: Play_Transform_Player
+      guid: 507ff7a608e3e147a38306756aed76f0
+      id: 1456305894
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bbc14059b1abc1438a0d024ccd4556a0
+      - ElementName: Play_Transform_Player
+        ObjectType: 3
+        guid: 507ff7a608e3e147a38306756aed76f0
+      Path: Events/Default Work Unit/Play_Transform_Player
+      maxAttenuation: 0
+      maxDuration: 0.782158
+      minDuration: 0.782158
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -302,7 +319,7 @@ MonoBehaviour:
     m_lastTime: -8585436138064775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0100000002000000030000000500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

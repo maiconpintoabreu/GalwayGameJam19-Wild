@@ -16,7 +16,26 @@ namespace AK
         static const AkUniqueID PLAY_DRAW_CARD = 786675197U;
         static const AkUniqueID PLAY_DRUIDBOUNCE_THEME = 3390488028U;
         static const AkUniqueID PLAY_PLACE_CARD = 1633448952U;
+        static const AkUniqueID PLAY_TRANSFORM_PLAYER = 1456305894U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace ANIMALFORM
+        {
+            static const AkUniqueID GROUP = 3627369475U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BIRD = 1544377644U;
+                static const AkUniqueID DEER = 1976939193U;
+                static const AkUniqueID FOX = 1083137540U;
+                static const AkUniqueID SEAL = 618695674U;
+                static const AkUniqueID STATUE = 939730917U;
+            } // namespace SWITCH
+        } // namespace ANIMALFORM
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

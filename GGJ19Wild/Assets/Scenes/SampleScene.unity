@@ -678,8 +678,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 737277185}
-        m_TargetAssemblyTypeName: DrawCardSound, Assembly-CSharp
-        m_MethodName: DrawCardSFX
+        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
+        m_MethodName: PlaySFX
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -736,13 +736,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 737277180}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a76481d071d4ebe8612ff5f5d726b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 40895ae42f4b94dcd8a259493f42f698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DrawCardSounds:
+  PlaySounds:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a793edac2f8044385a71cd91e9424c26, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: a4d228525b1bd4491a236d50da619bec, type: 2}
 --- !u!1 &780836291
 GameObject:
   m_ObjectHideFlags: 0
@@ -4855,6 +4855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1812266970}
   - component: {fileID: 1812266973}
+  - component: {fileID: 1812266974}
   - component: {fileID: 1812266972}
   - component: {fileID: 1812266971}
   m_Layer: 0
@@ -4940,6 +4941,18 @@ MonoBehaviour:
           m_StringArgument: WildDeck
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1812266974}
+        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1812266972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4978,6 +4991,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812266969}
   m_CullTransparentMesh: 1
+--- !u!114 &1812266974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812266969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40895ae42f4b94dcd8a259493f42f698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlaySounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 96f5499e4b31e49bca4c477544b74b40, type: 2}
 --- !u!1 &1816843992
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,6 +5050,7 @@ GameObject:
   - component: {fileID: 1912790060}
   - component: {fileID: 1912790063}
   - component: {fileID: 1912790062}
+  - component: {fileID: 1912790064}
   - component: {fileID: 1912790061}
   m_Layer: 0
   m_Name: NormalDeck
@@ -5105,6 +5135,18 @@ MonoBehaviour:
           m_StringArgument: NormalDeck
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1912790064}
+        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1912790062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5143,3 +5185,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912790059}
   m_CullTransparentMesh: 1
+--- !u!114 &1912790064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912790059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40895ae42f4b94dcd8a259493f42f698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlaySounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a793edac2f8044385a71cd91e9424c26, type: 2}
