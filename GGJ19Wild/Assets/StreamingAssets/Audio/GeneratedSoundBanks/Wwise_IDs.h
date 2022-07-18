@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BIRD = 1844467875U;
         static const AkUniqueID PLAY_DRAW_CARD = 786675197U;
         static const AkUniqueID PLAY_DRUIDBOUNCE_THEME = 3390488028U;
         static const AkUniqueID PLAY_PLACE_CARD = 1633448952U;

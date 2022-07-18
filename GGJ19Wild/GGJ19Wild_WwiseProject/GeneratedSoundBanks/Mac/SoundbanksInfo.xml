@@ -21,11 +21,19 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3481511690">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1205053528">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1844467875" Name="Play_Bird" ObjectPath="\Events\Default Work Unit\Play_Bird" DurationType="OneShot" DurationMin="0.748792" DurationMax="0.890469">
+					<IncludedMemoryFiles>
+						<File Id="411416655" Language="SFX">
+							<ShortName>Bedsheet Swishes 4.wav</ShortName>
+							<Path>SFX/Bedsheet Swishes 4_896027FD.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="786675197" Name="Play_Draw_Card" ObjectPath="\Events\Default Work Unit\Play_Draw_Card" DurationType="OneShot" DurationMin="0.286" DurationMax="0.383134">
 					<IncludedMemoryFiles>
 						<File Id="446847787" Language="SFX">
@@ -75,6 +83,17 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="3627369475" Name="AnimalForm" ObjectPath="\Switches\Default Work Unit\AnimalForm" GUID="{8B437802-45DB-4B84-82F7-382037C0176A}">
+					<Switches>
+						<Switch Id="1976939193" Name="Deer" ObjectPath="\Switches\Default Work Unit\AnimalForm\Deer" GUID="{3002A67B-BF9F-434B-892A-12FDF6C3B837}"/>
+						<Switch Id="1544377644" Name="Bird" ObjectPath="\Switches\Default Work Unit\AnimalForm\Bird" GUID="{11D95D6A-92E8-40DB-B03A-0759C553D4C5}"/>
+						<Switch Id="618695674" Name="Seal" ObjectPath="\Switches\Default Work Unit\AnimalForm\Seal" GUID="{01FBEC1F-A57C-44FC-B2F7-D6BC7B7B4B93}"/>
+						<Switch Id="1083137540" Name="Fox" ObjectPath="\Switches\Default Work Unit\AnimalForm\Fox" GUID="{0F255DF1-3324-478E-B655-13FE8E6F382C}"/>
+						<Switch Id="939730917" Name="Statue" ObjectPath="\Switches\Default Work Unit\AnimalForm\Statue" GUID="{09BED06A-F5AC-4691-AAD8-52CD95154A99}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -2,9 +2,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	786675197	Play_Draw_Card			\Default Work Unit\Play_Draw_Card	
 	1456305894	Play_Transform_Player			\Default Work Unit\Play_Transform_Player	
 	1633448952	Play_Place_Card			\Default Work Unit\Play_Place_Card	
+	1844467875	Play_Bird			\Default Work Unit\Play_Bird	
 	3390488028	Play_DruidBounce_Theme			\Default Work Unit\Play_DruidBounce_Theme	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3627369475	AnimalForm			\Default Work Unit\AnimalForm	
+
+Switch	ID	Name	Switch Group			Notes
+	618695674	Seal	AnimalForm			
+	939730917	Statue	AnimalForm			
+	1083137540	Fox	AnimalForm			
+	1544377644	Bird	AnimalForm			
+	1976939193	Deer	AnimalForm			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	411416655	Bird_Flaps	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Bedsheet Swishes 4_896027FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Bird\Bird_Flaps		143832
 	446847787	Draw_Card_04	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Card Equip-1eqa_11-67_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Draw_Card\Draw_Card_04		32832
 	591450367	Draw_Card_03	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Card Equip-1eqa_07-15_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Draw_Card\Draw_Card_03		38976
 	655787122	Place_Card_01	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Mac\SFX\Card Equip-1eqa_11-55_CDDF4E94.wem		\Actor-Mixer Hierarchy\Default Work Unit\Place_Card\Place_Card_01		15708
