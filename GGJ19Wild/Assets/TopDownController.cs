@@ -10,14 +10,15 @@ public class TopDownController : MonoBehaviour
         public string cardName;
         public string cardAction;
         public string description;
-        public float number;
+        public int number;
+        public int movementType;
         public Sprite sprite;
     }
 
     public Cards[] handCards = new Cards[3];
 
-    public Cards[] NormalCardDeck;
-    public Cards[] WildCardDeck;
+    [SerializeField] Cards[] NormalCardDeck;
+    [SerializeField] Cards[] WildCardDeck;
 
     private bool isMoving = false;
     //public bool isAlive = true;
@@ -40,41 +41,33 @@ public class TopDownController : MonoBehaviour
             {
                 case "WalkRight":
 
-                    dir.x = this.handCards[0].number;
+                    dir.x = 1;
                     animator.SetInteger("Direction", 2);
-                    dir.Normalize();
-                    animator.SetBool("IsMoving", dir.magnitude > 0);
-                    GetComponent<Rigidbody2D>().velocity = dir;
 
                     break;
                 case "WalkLeft":
 
-                    dir.x = this.handCards[0].number * (-1);
+                    dir.x = -1;
                     animator.SetInteger("Direction", 3);
-                    dir.Normalize();
-                    animator.SetBool("IsMoving", dir.magnitude > 0);
-                    GetComponent<Rigidbody2D>().velocity = dir;
 
                     break;
                 case "WalkUp":
 
-                    dir.y = this.handCards[0].number;
+                    dir.y = 1;
                     animator.SetInteger("Direction", 1);
-                    dir.Normalize();
-                    animator.SetBool("IsMoving", dir.magnitude > 0);
-                    GetComponent<Rigidbody2D>().velocity = dir;
 
                     break;
                 case "WalkDown":
 
-                    dir.y = this.handCards[0].number * (-1);
+                    dir.y = -1;
                     animator.SetInteger("Direction", 0);
-                    dir.Normalize();
-                    animator.SetBool("IsMoving", dir.magnitude > 0);
-                    GetComponent<Rigidbody2D>().velocity = dir;
 
                     break;
             }
+            animator.SetInteger("MovementType", this.handCards[0].movementType);
+            dir.Normalize();
+            animator.SetBool("IsMoving", dir.magnitude > 0);
+            GetComponent<Rigidbody2D>().velocity = dir;
         }
         else
         {
@@ -126,7 +119,7 @@ public class TopDownController : MonoBehaviour
     {
 
         //yield on a new YieldInstruction that waits for 2 seconds.
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(this.handCards[0].number);
         this.isMoving = false;
         this.handCards[0] = new Cards();
     }

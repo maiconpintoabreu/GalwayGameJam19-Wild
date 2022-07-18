@@ -7,6 +7,7 @@ public class CurrentCardUIController : MonoBehaviour
 {
     TopDownController playerController;
     [SerializeField] GameObject player;
+    [SerializeField] Sprite defaultHand;
     Image spriteRenderer;
     Sprite newSprite;
     // Start is called before the first frame update
@@ -22,14 +23,14 @@ public class CurrentCardUIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerController && playerController.handCards[0].cardAction != "")
+        if (playerController && playerController.handCards[0].number > 0)
         {
             spriteRenderer.sprite = playerController.handCards[0].sprite;
         }
+        else
+        {
+            spriteRenderer.sprite = this.defaultHand;
+        }
 
-    }
-    void ChangeSprite()
-    {
-        spriteRenderer.sprite = newSprite;
     }
 }
