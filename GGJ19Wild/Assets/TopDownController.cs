@@ -13,7 +13,12 @@ public class TopDownController : MonoBehaviour
         public float number;
         public Sprite sprite;
     }
-    public Cards card;
+
+    public Cards[] handCards = new Cards[3];
+
+    public Cards[] NormalCardDeck;
+    public Cards[] WildCardDeck;
+
     private bool isMoving = false;
     //public bool isAlive = true;
 
@@ -31,11 +36,11 @@ public class TopDownController : MonoBehaviour
         Vector2 dir = Vector2.zero;
         if (this.isMoving)
         {
-            switch(this.card.cardAction)
+            switch(this.handCards[0].cardAction)
             {
                 case "WalkRight":
 
-                    dir.x = this.card.number;
+                    dir.x = this.handCards[0].number;
                     animator.SetInteger("Direction", 2);
                     dir.Normalize();
                     animator.SetBool("IsMoving", dir.magnitude > 0);
@@ -44,7 +49,7 @@ public class TopDownController : MonoBehaviour
                     break;
                 case "WalkLeft":
 
-                    dir.x = this.card.number * (-1);
+                    dir.x = this.handCards[0].number * (-1);
                     animator.SetInteger("Direction", 3);
                     dir.Normalize();
                     animator.SetBool("IsMoving", dir.magnitude > 0);
@@ -53,8 +58,8 @@ public class TopDownController : MonoBehaviour
                     break;
                 case "WalkUp":
 
-                    dir.y = this.card.number;
-                    animator.SetInteger("Direction", 0);
+                    dir.y = this.handCards[0].number;
+                    animator.SetInteger("Direction", 1);
                     dir.Normalize();
                     animator.SetBool("IsMoving", dir.magnitude > 0);
                     GetComponent<Rigidbody2D>().velocity = dir;
@@ -62,8 +67,8 @@ public class TopDownController : MonoBehaviour
                     break;
                 case "WalkDown":
 
-                    dir.y = this.card.number * (-1);
-                    animator.SetInteger("Direction", 1);
+                    dir.y = this.handCards[0].number * (-1);
+                    animator.SetInteger("Direction", 0);
                     dir.Normalize();
                     animator.SetBool("IsMoving", dir.magnitude > 0);
                     GetComponent<Rigidbody2D>().velocity = dir;
@@ -82,11 +87,39 @@ public class TopDownController : MonoBehaviour
         //Check if character is moving to animate
 
     }
-    public void CardSelected(string card)
+    public void UseCurrentCard()
     {
-        Debug.Log(this.card.cardAction);
-        this.isMoving = true;
-        StartCoroutine(WaitForCasting());
+        if (!this.isMoving)
+        {
+            if (this.handCards[0].cardAction != "")
+            {
+                Debug.Log(this.handCards[0].cardAction);
+                this.isMoving = true;
+                StartCoroutine(WaitForCasting());
+            }
+        }
+    }
+    public void CardSelected(string deckName)
+    {
+        if (!this.isMoving)
+        {
+            if (deckName == "NormalDeck")
+            {
+                if (this.NormalCardDeck.Length > 0)
+                {
+                    int cardIndex = Random.Range(0, this.NormalCardDeck.Length);
+                    this.handCards[0] = this.RemoveAt<Cards>(ref this.NormalCardDeck, cardIndex);
+                }
+            }
+            else
+            {
+                if (this.WildCardDeck.Length > 0)
+                {
+                    int cardIndex = Random.Range(0, this.WildCardDeck.Length);
+                    this.handCards[0] = this.RemoveAt<Cards>(ref this.WildCardDeck, cardIndex);
+                }
+            }
+        }
     }
 
     IEnumerator WaitForCasting()
@@ -95,6 +128,15 @@ public class TopDownController : MonoBehaviour
         //yield on a new YieldInstruction that waits for 2 seconds.
         yield return new WaitForSeconds(2);
         this.isMoving = false;
+        this.handCards[0] = new Cards();
+    }
+    public T RemoveAt<T>(ref T[] arr, int index)
+    {
+        T item = arr[index];
+        arr[index] = arr[arr.Length - 1];
+        System.Array.Resize(ref arr, arr.Length - 1);
+
+        return item;
     }
 }
 

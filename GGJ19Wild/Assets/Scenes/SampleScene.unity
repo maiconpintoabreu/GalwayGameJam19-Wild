@@ -123,69 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &39101737
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 822607119659686675, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6222340218952811330, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-      propertyPath: m_Name
-      value: WildDeck
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
 --- !u!114 &67358583 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
   m_PrefabInstance: {fileID: 859142044}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 328552436}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 195e08a9257f577488f4c09473301885, type: 3}
@@ -224,143 +167,6 @@ Transform:
   m_Father: {fileID: 1418452697}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &136132349
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: EmptyCard.sprite
-      value: 
-      objectReference: {fileID: -4596500826337777618, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: EmptyCard.cardName
-      value: Empty
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: EmptyCard.cardAction
-      value: DoNothing
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: EmptyCard.description
-      value: Empty
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[0].number
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[0].sprite
-      value: 
-      objectReference: {fileID: -6555575649291838755, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[1].number
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[1].sprite
-      value: 
-      objectReference: {fileID: -769374233221200952, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[2].number
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[2].sprite
-      value: 
-      objectReference: {fileID: 6034864100499761545, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[0].cardName
-      value: FoolCard
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[1].cardName
-      value: DevilCard
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[2].cardName
-      value: HermitCard
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[0].cardAction
-      value: WalkRight
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[1].cardAction
-      value: WalkLeft
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[2].cardAction
-      value: WalkLeft
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[0].description
-      value: Walk Right
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[1].description
-      value: Walk Left
-      objectReference: {fileID: 0}
-    - target: {fileID: 389137046926222252, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: CardList.Array.data[2].description
-      value: Walk Left
-      objectReference: {fileID: 0}
-    - target: {fileID: 1705767148228217006, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_Name
-      value: NormalDeck
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200018122550417585, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b4397e73a82472498e1d4765d051c38, type: 3}
 --- !u!1 &152251359
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +178,7 @@ GameObject:
   - component: {fileID: 152251360}
   - component: {fileID: 152251363}
   - component: {fileID: 152251362}
+  - component: {fileID: 152251361}
   m_Layer: 0
   m_Name: CurrentCard
   m_TagString: Untagged
@@ -398,6 +205,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &152251361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152251359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45f2ffdc83c9af42a2928cbdffc3de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 328552436}
 --- !u!114 &152251362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,14 +231,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5283019, g: 0.256675, b: 0.256675, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6555575649291838755, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -436,41 +256,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152251359}
   m_CullTransparentMesh: 1
---- !u!1 &317147445 stripped
+--- !u!1 &328552436 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6222340218952811330, guid: b948094e3d4fc0a49984cfb37be61371, type: 3}
-  m_PrefabInstance: {fileID: 39101737}
+  m_CorrespondingSourceObject: {fileID: 8005439441809574850, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+  m_PrefabInstance: {fileID: 859142044}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &317147446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317147445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2816fccb50dc8e0468cc170fd5af7f9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Position: 0
-  CardList:
-  - cardName: DeathCard
-    cardAction: WalkUp
-    description: Run Fowards
-    number: 5
-    sprite: {fileID: -3056297102037108793, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
-  - cardName: EmperorCard
-    cardAction: WalkDown
-    description: Run Backward
-    number: 2
-    sprite: {fileID: -2613411450045547498, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
-  EmptyCard:
-    cardName: Empty
-    cardAction: DoNothing
-    description: Empty
-    number: 0
-    sprite: {fileID: -4596500826337777618, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
 --- !u!1 &348793315
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +595,7 @@ GameObject:
   - component: {fileID: 737277185}
   - component: {fileID: 737277182}
   m_Layer: 0
-  m_Name: Button
+  m_Name: CurrentCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -823,7 +613,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 152251360}
-  - {fileID: 748685772}
   m_Father: {fileID: 576226311}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -878,8 +667,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 67358583}
         m_TargetAssemblyTypeName: TopDownController, Assembly-CSharp
-        m_MethodName: CardSelected
-        m_Mode: 5
+        m_MethodName: UseCurrentCard
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -954,85 +743,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a793edac2f8044385a71cd91e9424c26, type: 2}
---- !u!1 &748685771
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 748685772}
-  - component: {fileID: 748685774}
-  - component: {fileID: 748685773}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &748685772
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748685771}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 737277181}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: 200, y: -20}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &748685773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748685771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Card Sample
---- !u!222 &748685774
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748685771}
-  m_CullTransparentMesh: 1
 --- !u!1 &780836291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +807,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &859142044
 PrefabInstance:
@@ -1134,6 +844,114 @@ PrefabInstance:
       propertyPath: card.description
       value: Test
       objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[0].number
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: -3056297102037108793, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[1].number
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: -2613411450045547498, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[0].number
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: -6555575649291838755, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[1].number
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: -769374233221200952, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[2].number
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 6034864100499761545, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[0].cardName
+      value: DeathCard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[1].cardName
+      value: EmperorCard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[0].cardName
+      value: FoolCard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[1].cardName
+      value: DevilCard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[2].cardName
+      value: HermitCard
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[0].cardAction
+      value: WalkUp
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[1].cardAction
+      value: WalkDown
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[0].description
+      value: Run Fowards
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: WildCardDeck.Array.data[1].description
+      value: Run Backward
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[0].cardAction
+      value: WalkRight
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[1].cardAction
+      value: WalkLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[2].cardAction
+      value: WalkLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[0].description
+      value: Walk Right
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[1].description
+      value: Walk Left
+      objectReference: {fileID: 0}
+    - target: {fileID: -4199497235197949975, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: NormalCardDeck.Array.data[2].description
+      value: Walk Left
+      objectReference: {fileID: 0}
     - target: {fileID: -165578794997798352, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
       propertyPath: m_Controller
       value: 
@@ -1164,7 +982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8356912461028638600, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8356912461028638600, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4426,7 +4244,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179915119
 GameObject:
@@ -4530,7 +4348,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1192676873
 GameObject:
@@ -4589,7 +4407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3056297102037108793, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5ab588d51ab2c1c4a987a1eae0e0ffcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4871,7 +4689,7 @@ Transform:
   m_Children:
   - {fileID: 82432018}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1578109888
 GameObject:
@@ -5009,7 +4827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -769374233221200952, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 924aa4890371e814596158f42d77786b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5065,7 +4883,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -20, y: 0}
   m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1812266971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5119,7 +4937,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TestCard
+          m_StringArgument: WildDeck
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1812266972
@@ -5190,7 +5008,7 @@ Transform:
   - {fileID: 348793316}
   - {fileID: 1179915120}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1912790059
 GameObject:
@@ -5230,7 +5048,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 20, y: 0}
   m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1912790061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5284,7 +5102,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TestCard
+          m_StringArgument: NormalDeck
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1912790062
