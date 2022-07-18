@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8356912461028638600}
   - component: {fileID: -4199497235197949975}
   - component: {fileID: 5414221115493594392}
+  - component: {fileID: 494482970177905720}
   - component: {fileID: 151986552796468788}
   - component: {fileID: 7092486838724935629}
   - component: {fileID: -8421723098943376100}
@@ -48,7 +49,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 195e08a9257f577488f4c09473301885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: 
+  handCards:
+  - cardName: 
+    cardAction: 
+    description: 
+    number: 0
+    sprite: {fileID: 0}
+  - cardName: 
+    cardAction: 
+    description: 
+    number: 0
+    sprite: {fileID: 0}
+  - cardName: 
+    cardAction: 
+    description: 
+    number: 0
+    sprite: {fileID: 0}
+  NormalCardDeck: []
+  WildCardDeck: []
 --- !u!114 &5414221115493594392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,7 +74,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8005439441809574850}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76a76481d071d4ebe8612ff5f5d726b2, type: 3}
   m_Name: 
@@ -65,6 +83,22 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a793edac2f8044385a71cd91e9424c26, type: 2}
+--- !u!114 &494482970177905720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8005439441809574850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40895ae42f4b94dcd8a259493f42f698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlaySounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a4d228525b1bd4491a236d50da619bec, type: 2}
 --- !u!212 &151986552796468788
 SpriteRenderer:
   m_ObjectHideFlags: 0
