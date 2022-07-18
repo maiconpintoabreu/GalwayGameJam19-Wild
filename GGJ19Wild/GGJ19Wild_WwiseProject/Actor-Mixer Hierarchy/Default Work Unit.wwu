@@ -517,6 +517,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Bird_Flaps" ID="{04343994-6C70-425F-8F3D-394965234AA6}" ShortID="775029955">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>660</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{19BB27B7-0A9B-4D15-B805-A649968F7202}"/>
@@ -528,14 +535,20 @@
 									<ChildrenList>
 										<AudioFileSource Name="Bedsheet Swishes 4" ID="{BAC058D5-C514-4460-93F5-B8019D66271D}">
 											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.19351717464925"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="1.48792270531401"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.98550724637681"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.10500410172272"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Bedsheet Swishes 4.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="411416655"/>
+												<MediaID ID="352311364"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
