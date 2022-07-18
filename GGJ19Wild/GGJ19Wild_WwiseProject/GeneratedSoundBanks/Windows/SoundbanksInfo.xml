@@ -21,16 +21,32 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4290385116">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3476658803">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1844467875" Name="Play_Bird" ObjectPath="\Events\Default Work Unit\Play_Bird" DurationType="OneShot" DurationMin="0.21074" DurationMax="0.250613">
+				<Event Id="1844467875" Name="Play_Bird" ObjectPath="\Events\Default Work Unit\Play_Bird" DurationType="OneShot" DurationMin="0.19348" DurationMax="0.329205">
 					<IncludedMemoryFiles>
+						<File Id="174036916" Language="SFX">
+							<ShortName>Bedsheet Swishes 4.wav</ShortName>
+							<Path>SFX/Bedsheet Swishes 4_E1491B14.wem</Path>
+						</File>
 						<File Id="352311364" Language="SFX">
 							<ShortName>Bedsheet Swishes 4.wav</ShortName>
 							<Path>SFX/Bedsheet Swishes 4_F45BABD1.wem</Path>
+						</File>
+						<File Id="1010964508" Language="SFX">
+							<ShortName>Bedsheet Swishes 4.wav</ShortName>
+							<Path>SFX/Bedsheet Swishes 4_1F62E9F6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2110430006" Name="Play_Deer" ObjectPath="\Events\Default Work Unit\Play_Deer" DurationType="OneShot" DurationMin="1.095194" DurationMax="1.379858">
+					<IncludedMemoryFiles>
+						<File Id="406988573" Language="SFX">
+							<ShortName>Assorted Foilage Rustle Long.wav</ShortName>
+							<Path>SFX/Assorted Foilage Rustle Long_74278CEB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -62,6 +78,14 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
+				<Event Id="2991955701" Name="Play_Fox" ObjectPath="\Events\Default Work Unit\Play_Fox" DurationType="OneShot" DurationMin="0.783183" DurationMax="1.045424">
+					<IncludedMemoryFiles>
+						<File Id="119282644" Language="SFX">
+							<ShortName>Soil - Short.wav</ShortName>
+							<Path>SFX/Soil - Short_81B70B5E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1633448952" Name="Play_Place_Card" ObjectPath="\Events\Default Work Unit\Play_Place_Card" DurationType="OneShot" DurationMin="0.145188" DurationMax="0.40708">
 					<IncludedMemoryFiles>
 						<File Id="655787122" Language="SFX">
@@ -71,6 +95,18 @@
 						<File Id="675496678" Language="SFX">
 							<ShortName>Card Equip-1eqa_08-17.wav</ShortName>
 							<Path>SFX/Card Equip-1eqa_08-17_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4262365201" Name="Play_Seal" ObjectPath="\Events\Default Work Unit\Play_Seal" DurationType="OneShot" DurationMin="0.252008" DurationMax="1.788642">
+					<IncludedMemoryFiles>
+						<File Id="534292165" Language="SFX">
+							<ShortName>Stone Splash In Rockpool 3.wav</ShortName>
+							<Path>SFX/Stone Splash In Rockpool 3_8CC548E6.wem</Path>
+						</File>
+						<File Id="766247608" Language="SFX">
+							<ShortName>Stone Splash In Rockpool 3.wav</ShortName>
+							<Path>SFX/Stone Splash In Rockpool 3_025D42BC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

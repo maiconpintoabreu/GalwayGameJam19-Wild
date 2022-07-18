@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: 13b746e15f26954eb7f82a12f6eb4ad7
       Path: Events/Default Work Unit/Play_Bird
       maxAttenuation: 0
-      maxDuration: 0.890469
-      minDuration: 0.748792
+      maxDuration: 0.329205
+      minDuration: 0.19348
     - name: Play_Draw_Card
       guid: f954563f8b2da04ea64094396e1656a2
       id: 786675197
