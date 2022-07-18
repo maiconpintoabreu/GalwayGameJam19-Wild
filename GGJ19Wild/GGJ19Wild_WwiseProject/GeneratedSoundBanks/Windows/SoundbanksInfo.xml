@@ -21,16 +21,16 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1205053528">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4290385116">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1844467875" Name="Play_Bird" ObjectPath="\Events\Default Work Unit\Play_Bird" DurationType="OneShot" DurationMin="0.748792" DurationMax="0.890469">
+				<Event Id="1844467875" Name="Play_Bird" ObjectPath="\Events\Default Work Unit\Play_Bird" DurationType="OneShot" DurationMin="0.21074" DurationMax="0.250613">
 					<IncludedMemoryFiles>
-						<File Id="411416655" Language="SFX">
+						<File Id="352311364" Language="SFX">
 							<ShortName>Bedsheet Swishes 4.wav</ShortName>
-							<Path>SFX/Bedsheet Swishes 4_896027FD.wem</Path>
+							<Path>SFX/Bedsheet Swishes 4_F45BABD1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
