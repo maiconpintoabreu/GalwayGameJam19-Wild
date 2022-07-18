@@ -968,6 +968,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1261847489
       objectReference: {fileID: 0}
+    - target: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: PlaySounds.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d72183a040626451d85cfec8a3fb4bd8, type: 2}
     - target: {fileID: 8005439441809574850, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
       propertyPath: m_Name
       value: Player

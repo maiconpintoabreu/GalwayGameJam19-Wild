@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Bird" ID="{E146B713-265F-4E95-B7F8-2A12F6EB4AD7}">
+					<ChildrenList>
+						<Action Name="" ID="{6FE824DA-5765-48D5-8B4F-E7CE1EA64E4F}" ShortID="983502914">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird" ID="{17416637-080C-4436-9197-78B8DB3F9B56}" WorkUnitID="{31BE84A0-F21A-424C-BA62-9DECD099DB5E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
