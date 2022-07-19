@@ -6,10 +6,13 @@
 				<SoundBank Name="Main" ID="{8B59DD9A-1456-4F8C-BF02-18F8BD93CBC9}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_DruidBounce_Theme" ID="{B657B652-4B15-42B8-9D86-4D5A50797D60}" WorkUnitID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Seal" ID="{B064D63E-FC0F-44BA-AB7D-EB67BA7C4A3C}" WorkUnitID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Fox" ID="{A0BA8D08-B97F-47BF-AE54-31317CDFE667}" WorkUnitID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Transform_Player" ID="{A6F77F50-E308-47E1-A383-06756AED76F0}" WorkUnitID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Bird" ID="{E146B713-265F-4E95-B7F8-2A12F6EB4AD7}" WorkUnitID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Draw_Card" ID="{3F5654F9-2D8B-4EA0-A640-94396E1656A2}" WorkUnitID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Place_Card" ID="{6B250C79-75DC-4EF5-BCF7-ECC7C7753649}" WorkUnitID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Deer" ID="{5BAEB021-4161-4F89-BE1B-813192EC0789}" WorkUnitID="{5940C1BB-ABB1-43C1-8A0D-024CCD4556A0}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
