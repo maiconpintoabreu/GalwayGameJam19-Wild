@@ -902,6 +902,22 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a4d228525b1bd4491a236d50da619bec, type: 2}
+  PlayFlyingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlaySwimmingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlayDiggingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlayRustlingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &780836291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,6 +1255,22 @@ PrefabInstance:
       propertyPath: PlaySounds.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: d72183a040626451d85cfec8a3fb4bd8, type: 2}
+    - target: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: PlayFlyingSounds.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8e57f9d5e8b644ee3a5c1cde30dfcfdf, type: 2}
+    - target: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: PlayDiggingSounds.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ff5de88ba848143c09834ef71359a157, type: 2}
+    - target: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: PlayRustlingSounds.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e17852f2fee264783b7e46fb3c02529e, type: 2}
+    - target: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: PlaySwimmingSounds.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 01299acb84965478b92a3fa295382329, type: 2}
     - target: {fileID: 8005439441809574850, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5494,6 +5526,22 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 96f5499e4b31e49bca4c477544b74b40, type: 2}
+  PlayFlyingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlaySwimmingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlayDiggingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlayRustlingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1816843992
 GameObject:
   m_ObjectHideFlags: 0
@@ -5688,3 +5736,19 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a793edac2f8044385a71cd91e9424c26, type: 2}
+  PlayFlyingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlaySwimmingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlayDiggingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlayRustlingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

@@ -557,6 +557,90 @@
 										<ActiveSource Name="Bedsheet Swishes 4" ID="{BAC058D5-C514-4460-93F5-B8019D66271D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Bird_Flaps_01" ID="{3C84D845-E115-4A12-A82B-9024F7194283}" ShortID="949611852">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>660</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{19BB27B7-0A9B-4D15-B805-A649968F7202}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3CD76364-A979-4C7E-A5EF-115E0F1E2637}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bedsheet Swishes 4" ID="{DE61B738-64E7-4959-A0C5-0891108CA87E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.145137880986938"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.19351717464925"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.67128022829418"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.48187879935214"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bedsheet Swishes 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="174036916"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Bedsheet Swishes 4" ID="{DE61B738-64E7-4959-A0C5-0891108CA87E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Bird_Flaps_02" ID="{E13E1752-1405-424B-8DB3-97E537062136}" ShortID="803378410">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>660</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{19BB27B7-0A9B-4D15-B805-A649968F7202}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3CD76364-A979-4C7E-A5EF-115E0F1E2637}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bedsheet Swishes 4" ID="{6574CBA4-559F-494A-BF36-C19161B56FA3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.135462022254475"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.19351717464925"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.783744557329463"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.35028712059065"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bedsheet Swishes 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1010964508"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Bedsheet Swishes 4" ID="{6574CBA4-559F-494A-BF36-C19161B56FA3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>

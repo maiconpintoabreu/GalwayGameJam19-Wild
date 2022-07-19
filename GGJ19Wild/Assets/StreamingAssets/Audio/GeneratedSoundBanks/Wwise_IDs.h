@@ -14,9 +14,12 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BIRD = 1844467875U;
+        static const AkUniqueID PLAY_DEER = 2110430006U;
         static const AkUniqueID PLAY_DRAW_CARD = 786675197U;
         static const AkUniqueID PLAY_DRUIDBOUNCE_THEME = 3390488028U;
+        static const AkUniqueID PLAY_FOX = 2991955701U;
         static const AkUniqueID PLAY_PLACE_CARD = 1633448952U;
+        static const AkUniqueID PLAY_SEAL = 4262365201U;
         static const AkUniqueID PLAY_TRANSFORM_PLAYER = 1456305894U;
     } // namespace EVENTS
 
