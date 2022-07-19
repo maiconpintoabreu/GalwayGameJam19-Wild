@@ -5,24 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ElementManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] string damageType;
 
     void OnTriggerEnter2D(Collider2D otherObject)
     {
         //When something enters this object's trigger collider, check if it is the ball GameObject.
         if (otherObject.name == "Player")
         {
-            SceneManager.LoadScene(SceneManager. GetActiveScene(). name);
+            var playerController = otherObject.GetComponent<TopDownController>();
+            playerController.GetDamage(this.damageType);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

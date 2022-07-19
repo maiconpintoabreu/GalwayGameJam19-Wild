@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TopDownController : MonoBehaviour
 {
-
-    public CardModel[] handCards = new CardModel[3];
-
-    [SerializeField] CardModel[] NormalCardDeck;
-    [SerializeField] CardModel[] WildCardDeck;
-
+    private int hendCardsLimit = 3;
+    public List<CardModel> handCards;
+    List<CardModel> NormalCardDeck;
+    List<CardModel> WildCardDeck;
+    [SerializeField] List<CardModel> AllCards;
     private bool isMoving = false;
-    //public bool isAlive = true;
-
+    public bool isAlive = true;
     private Animator animator;
 
     // Start is called before the first frame update
@@ -20,12 +19,26 @@ public class TopDownController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
+    void Awake()
+    {
+        this.isAlive = true;
+        this.NormalCardDeck = new List<CardModel>();
+        this.WildCardDeck = new List<CardModel>();
+        for(var i = 0; i < this.AllCards.Count; i++){
+            CardModel element = this.AllCards[i];
+            if(element.cardType == "Normal"){
+                this.NormalCardDeck.Add(element);
+            }else if(element.cardType == "Wild"){
+                this.WildCardDeck.Add(element);
+            }
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
         Vector2 dir = Vector2.zero;
-        if (this.isMoving)
+        if (this.isMoving && this.isAlive)
         {
             switch(this.handCards[0].cardAction)
             {
@@ -66,17 +79,13 @@ public class TopDownController : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = dir;
         }
 
-        //Get Card Selected and process the movement
-        //Check if character is moving to animate
-
     }
     public void UseCurrentCard()
     {
         if (!this.isMoving)
         {
-            if (this.handCards[0].cardAction != "")
+            if (this.handCards[0] && this.handCards[0].cardAction != "")
             {
-                Debug.Log(this.handCards[0].cardAction);
                 this.isMoving = true;
                 StartCoroutine(WaitForCasting());
             }
@@ -88,21 +97,31 @@ public class TopDownController : MonoBehaviour
         {
             if (deckName == "NormalDeck")
             {
-                if (this.NormalCardDeck.Length > 0)
+                if (this.NormalCardDeck.Count > 0)
                 {
-                    int cardIndex = Random.Range(0, this.NormalCardDeck.Length);
-                    this.handCards[0] = this.RemoveAt<CardModel>(ref this.NormalCardDeck, cardIndex);
+                    int cardIndex = Random.Range(0, this.NormalCardDeck.Count);
+                    this.handCards[0] = this.NormalCardDeck[cardIndex];
+                    this.NormalCardDeck.RemoveAt(cardIndex);
                 }
             }
             else
             {
-                if (this.WildCardDeck.Length > 0)
+                if (this.WildCardDeck.Count > 0)
                 {
-                    int cardIndex = Random.Range(0, this.WildCardDeck.Length);
-                    this.handCards[0] = this.RemoveAt<CardModel>(ref this.WildCardDeck, cardIndex);
+                    int cardIndex = Random.Range(0, this.WildCardDeck.Count);
+                    this.handCards[0] = this.WildCardDeck[cardIndex];
+                    this.WildCardDeck.RemoveAt(cardIndex);
                 }
             }
         }
+    }
+    public void Die(){
+        this.isAlive = false;
+    }
+    public void GetDamage(string damageType)
+    {
+        //TODO: check if correct card for the tile
+        this.Die();
     }
 
     IEnumerator WaitForCasting()
@@ -112,14 +131,6 @@ public class TopDownController : MonoBehaviour
         yield return new WaitForSeconds(this.handCards[0].number);
         this.isMoving = false;
         this.handCards[0] = null;
-    }
-    public T RemoveAt<T>(ref T[] arr, int index)
-    {
-        T item = arr[index];
-        arr[index] = arr[arr.Length - 1];
-        System.Array.Resize(ref arr, arr.Length - 1);
-
-        return item;
     }
 }
 

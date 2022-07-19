@@ -54,6 +54,11 @@ MonoBehaviour:
   - {fileID: 0}
   NormalCardDeck: []
   WildCardDeck: []
+  AllCards:
+  - {fileID: 11400000, guid: 159c9c31a840e1a4187b8eb90e70be6a, type: 2}
+  - {fileID: 11400000, guid: 4c8d369e201eb9040b362253e2b967d8, type: 2}
+  - {fileID: 11400000, guid: 2024dbf468371f64a94f114b94286aca, type: 2}
+  - {fileID: 11400000, guid: 0355148af54b38c41bb32c3d14564e37, type: 2}
 --- !u!114 &494482970177905720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +75,22 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a4d228525b1bd4491a236d50da619bec, type: 2}
+  PlayFlyingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlaySwimmingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlayDiggingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  PlayRustlingSounds:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!212 &151986552796468788
 SpriteRenderer:
   m_ObjectHideFlags: 0

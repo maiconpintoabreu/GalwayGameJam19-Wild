@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e676123bc5e135645aa61e39932377e2, type: 3}
-  m_Name: DevilCard
+  m_Name: JusticeCard
   m_EditorClassIdentifier: 
-  cardName: Devil
-  cardAction: WalkDown
-  description: Fly Down
-  number: 3
-  movementType: 1
-  sprite: {fileID: -769374233221200952, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+  cardName: JusticeCard
+  cardAction: WalkLeft
+  cardType: Normal
+  description: Walk Left
+  number: 4
+  movementType: 0
+  sprite: {fileID: 8048101208271225017, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}

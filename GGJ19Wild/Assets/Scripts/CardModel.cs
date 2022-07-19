@@ -7,6 +7,7 @@ public class CardModel : ScriptableObject
 {
     public string cardName;
     public string cardAction;
+    public string cardType;
     public string description;
     public int number;
     public int movementType;

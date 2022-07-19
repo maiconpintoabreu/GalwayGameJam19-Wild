@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CurrentCardUIController : MonoBehaviour
 {
     TopDownController playerController;
-    [SerializeField] GameObject player;
+    GameObject player;
     [SerializeField] Sprite defaultHand;
     Image spriteRenderer;
     Sprite newSprite;
@@ -17,6 +17,7 @@ public class CurrentCardUIController : MonoBehaviour
     }
     void Awake()
     {
+        player = GameObject.Find("Player");
         playerController = player.GetComponent<TopDownController>();
     }
 
