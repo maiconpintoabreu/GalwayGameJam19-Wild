@@ -23,7 +23,7 @@ public class CurrentCardUIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerController && playerController.handCards[0].number > 0)
+        if (playerController && playerController.handCards[0] && playerController.handCards[0].number > 0)
         {
             spriteRenderer.sprite = playerController.handCards[0].sprite;
         }

@@ -4,21 +4,11 @@ using UnityEngine;
 
 public class TopDownController : MonoBehaviour
 {
-    [System.Serializable]
-    public struct Cards
-    {
-        public string cardName;
-        public string cardAction;
-        public string description;
-        public int number;
-        public int movementType;
-        public Sprite sprite;
-    }
 
-    public Cards[] handCards = new Cards[3];
+    public CardModel[] handCards = new CardModel[3];
 
-    [SerializeField] Cards[] NormalCardDeck;
-    [SerializeField] Cards[] WildCardDeck;
+    [SerializeField] CardModel[] NormalCardDeck;
+    [SerializeField] CardModel[] WildCardDeck;
 
     private bool isMoving = false;
     //public bool isAlive = true;
@@ -101,7 +91,7 @@ public class TopDownController : MonoBehaviour
                 if (this.NormalCardDeck.Length > 0)
                 {
                     int cardIndex = Random.Range(0, this.NormalCardDeck.Length);
-                    this.handCards[0] = this.RemoveAt<Cards>(ref this.NormalCardDeck, cardIndex);
+                    this.handCards[0] = this.RemoveAt<CardModel>(ref this.NormalCardDeck, cardIndex);
                 }
             }
             else
@@ -109,7 +99,7 @@ public class TopDownController : MonoBehaviour
                 if (this.WildCardDeck.Length > 0)
                 {
                     int cardIndex = Random.Range(0, this.WildCardDeck.Length);
-                    this.handCards[0] = this.RemoveAt<Cards>(ref this.WildCardDeck, cardIndex);
+                    this.handCards[0] = this.RemoveAt<CardModel>(ref this.WildCardDeck, cardIndex);
                 }
             }
         }
@@ -121,7 +111,7 @@ public class TopDownController : MonoBehaviour
         //yield on a new YieldInstruction that waits for 2 seconds.
         yield return new WaitForSeconds(this.handCards[0].number);
         this.isMoving = false;
-        this.handCards[0] = new Cards();
+        this.handCards[0] = null;
     }
     public T RemoveAt<T>(ref T[] arr, int index)
     {
