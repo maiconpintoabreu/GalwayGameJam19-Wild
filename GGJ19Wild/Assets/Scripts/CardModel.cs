@@ -10,6 +10,6 @@ public class CardModel : ScriptableObject
     public string cardType;
     public string description;
     public int number;
-    public int movementType;
+    public WildTypeEnum movementType;
     public Sprite sprite;
 }

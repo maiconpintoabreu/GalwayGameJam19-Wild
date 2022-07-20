@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public enum WildTypeEnum {None=0, Bird=1, Seal=2, Fox=3, Deer=4}
+
 public class TopDownController : MonoBehaviour
 {
     //Audio
@@ -16,6 +18,7 @@ public class TopDownController : MonoBehaviour
     private bool isMoving = false;
     public bool isAlive = true;
     private Animator animator;
+    private string currentState;
 
   
 
@@ -45,42 +48,34 @@ public class TopDownController : MonoBehaviour
         Vector2 dir = Vector2.zero;
         if (this.isMoving && this.isAlive)
         {
+            int direction = -1;
             switch(this.handCards[0].cardAction)
             {
                 case "WalkRight":
-
                     dir.x = 1;
-                    animator.SetInteger("Direction", 2);
-
+                    direction = 2;
                     break;
                 case "WalkLeft":
-
                     dir.x = -1;
-                    animator.SetInteger("Direction", 3);
-
+                    direction = 3;
                     break;
                 case "WalkUp":
-
                     dir.y = 1;
-                    animator.SetInteger("Direction", 1);
-
+                    direction = 1;
                     break;
                 case "WalkDown":
-
                     dir.y = -1;
-                    animator.SetInteger("Direction", 0);
-
+                    direction = 0;
                     break;
             }
-            animator.SetInteger("MovementType", this.handCards[0].movementType);
             dir.Normalize();
-            animator.SetBool("IsMoving", dir.magnitude > 0);
+            this.ChangeAnimationState(direction, (int)this.handCards[0].movementType, dir.magnitude > 0);
             GetComponent<Rigidbody2D>().velocity = dir;
         }
         else
         {
             dir.Normalize();
-            animator.SetBool("IsMoving", dir.magnitude > 0);
+            this.ChangeAnimationState(-1, -1, false);
             GetComponent<Rigidbody2D>().velocity = dir;
         }
 
@@ -131,7 +126,21 @@ public class TopDownController : MonoBehaviour
     public void GetDamage(string damageType)
     {
         //TODO: check if correct card for the tile
-        this.Die();
+        switch (damageType)
+        {
+            
+            case "Water":
+                if(this.animator.GetInteger("MovementType") != 1 && this.animator.GetInteger("MovementType") != 2)
+                {
+                    this.Die();
+                }
+                break;
+            default:
+
+                this.Die();
+
+                break;
+        }
     }
 
     IEnumerator WaitForCasting()
@@ -141,6 +150,16 @@ public class TopDownController : MonoBehaviour
         yield return new WaitForSeconds(this.handCards[0].number);
         this.isMoving = false;
         this.handCards[0] = null;
+    }
+    void ChangeAnimationState(int direction, int movementType, bool isMoving)
+    {
+        string id = direction.ToString() + movementType.ToString() + isMoving.ToString();
+        if(this.currentState == id) return;
+
+        animator.SetInteger("Direction", direction);
+        animator.SetInteger("MovementType", movementType);
+        animator.SetBool("IsMoving", isMoving);
+        this.currentState = id;
     }
 }
 
