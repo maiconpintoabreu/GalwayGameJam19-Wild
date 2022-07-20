@@ -10,10 +10,15 @@ public class PlaySound : MonoBehaviour
     public AK.Wwise.Event PlaySwimmingSounds;
     public AK.Wwise.Event PlayDiggingSounds;
     public AK.Wwise.Event PlayRustlingSounds;
+    // Music
+    public AK.Wwise.Event Music;
+    //
     // Start is called before the first frame update
     void Start()
     {
-
+        //Music Start
+        Music.Post(gameObject);
+        
     }
 
     public void PlaySFX()
@@ -42,6 +47,10 @@ public class PlaySound : MonoBehaviour
     }
 
 
-
+    //Music Stop
+    public void StopMusicPlaying()
+    {
+        Music.Stop(gameObject);
+    }
 
 }

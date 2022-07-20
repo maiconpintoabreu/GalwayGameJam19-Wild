@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     [SerializeField] bool isCheckingIfAlive;
-    
+
     TopDownController playerController;
     RectTransform uiTransform;
     GameObject player;
@@ -29,7 +29,7 @@ public class GameOverManager : MonoBehaviour
     }
     public void restartLevel()
     {
-            SceneManager.LoadScene(SceneManager. GetActiveScene(). name);
+        SceneManager.LoadScene(SceneManager. GetActiveScene(). name);
     }
 
 }

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CurrentCardUIController : MonoBehaviour
 {
+   
     TopDownController playerController;
     GameObject player;
     [SerializeField] Sprite defaultHand;

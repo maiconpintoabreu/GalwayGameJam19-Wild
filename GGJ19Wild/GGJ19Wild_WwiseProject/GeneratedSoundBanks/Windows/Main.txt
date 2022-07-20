@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2110430006	Play_Deer			\Default Work Unit\Play_Deer	
 	2991955701	Play_Fox			\Default Work Unit\Play_Fox	
 	3390488028	Play_DruidBounce_Theme			\Default Work Unit\Play_DruidBounce_Theme	
+	4020472470	Stop_DruidBounce_Theme			\Default Work Unit\Stop_DruidBounce_Theme	
 	4262365201	Play_Seal			\Default Work Unit\Play_Seal	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -20,8 +21,8 @@ Switch	ID	Name	Switch Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	119282644	Soil - Short	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Soil - Short_81B70B5E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Fox\Soil - Short		89474
-	174036916	Bird_Flaps_01	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Bedsheet Swishes 4_E1491B14.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Bird\Bird_Flaps_01		77880
-	352311364	Bird_Flaps	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Bedsheet Swishes 4_F45BABD1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Bird\Bird_Flaps		59302
+	174036916	Bird_Flaps_01	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Bedsheet Swishes 4_0328FBBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Bird\Bird_Flaps_01		77880
+	352311364	Bird_Flaps	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Bedsheet Swishes 4_5FDB6F11.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Bird\Bird_Flaps		59302
 	406988573	Deer_Rustle	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Assorted Foilage Rustle Long_74278CEB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Deer\Deer_Rustle		118078
 	446847787	Draw_Card_04	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Card Equip-1eqa_11-67_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Draw_Card\Draw_Card_04		32832
 	534292165	Seal_Swim_01	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Stone Splash In Rockpool 3_8CC548E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Seal\Seal_Swim_01		153040
@@ -32,7 +33,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	766247608	Seal_Swim_02	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Stone Splash In Rockpool 3_025D42BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Seal\Seal_Swim_02		27220
 	780261474	Draw_Card_01	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Card Equip-1eqa_11-61_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Draw_Card\Draw_Card_01		32064
 	980157040	Magic_Poof	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Magic Poof_794A33FC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transform_Player\Magic_Poof		84832
-	1010964508	Bird_Flaps_02	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Bedsheet Swishes 4_1F62E9F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Bird\Bird_Flaps_02		54452
+	1010964508	Bird_Flaps_02	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\Bedsheet Swishes 4_C5FAECBD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Mvm\Bird\Bird_Flaps_02		54452
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	974800209	DruidBounce2	Y:\Documents\repos\GalwayGameJam19-Wild\GGJ19Wild\GGJ19Wild_WwiseProject\.cache\Windows\SFX\DruidBounce2_D79FB2B7.wem	974800209.wem	\Interactive Music Hierarchy\Default Work Unit\Main Theme\DruidBounce_Theme\DruidBounce2	

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: b34aa397e24c584cb29287d8e6ca189f
     GuidInternal: 
-    m_lastTime: -8585434584134775808
+    m_lastTime: -8585433374784775808
     List:
     - name: Main
       guid: 9add598b56148c4fbf0218f8bd93cbc9
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: bbc14059b1abc1438a0d024ccd4556a0
     GuidInternal: 
-    m_lastTime: -8585434584134775808
+    m_lastTime: -8585433361254775808
     List:
     - name: Play_Bird
       guid: 13b746e15f26954eb7f82a12f6eb4ad7
@@ -113,6 +113,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.329205
       minDuration: 0.19348
+    - name: Play_Deer
+      guid: 21b0ae5b6141894fbe1b813192ec0789
+      id: 2110430006
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bbc14059b1abc1438a0d024ccd4556a0
+      - ElementName: Play_Deer
+        ObjectType: 3
+        guid: 21b0ae5b6141894fbe1b813192ec0789
+      Path: Events/Default Work Unit/Play_Deer
+      maxAttenuation: 0
+      maxDuration: 1.379858
+      minDuration: 1.095194
     - name: Play_Draw_Card
       guid: f954563f8b2da04ea64094396e1656a2
       id: 786675197
@@ -164,6 +181,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Fox
+      guid: 088dbaa07fb9bf47ae5431317cdfe667
+      id: 2991955701
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bbc14059b1abc1438a0d024ccd4556a0
+      - ElementName: Play_Fox
+        ObjectType: 3
+        guid: 088dbaa07fb9bf47ae5431317cdfe667
+      Path: Events/Default Work Unit/Play_Fox
+      maxAttenuation: 0
+      maxDuration: 1.045424
+      minDuration: 0.783183
     - name: Play_Place_Card
       guid: 790c256bdc75f54ebcf7ecc7c7753649
       id: 1633448952
@@ -181,6 +215,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.40708
       minDuration: 0.145188
+    - name: Play_Seal
+      guid: 3ed664b00ffcba44ab7deb67ba7c4a3c
+      id: 4262365201
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bbc14059b1abc1438a0d024ccd4556a0
+      - ElementName: Play_Seal
+        ObjectType: 3
+        guid: 3ed664b00ffcba44ab7deb67ba7c4a3c
+      Path: Events/Default Work Unit/Play_Seal
+      maxAttenuation: 0
+      maxDuration: 1.788642
+      minDuration: 0.252008
     - name: Play_Transform_Player
       guid: 507ff7a608e3e147a38306756aed76f0
       id: 1456305894
@@ -198,6 +249,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.782158
       minDuration: 0.782158
+    - name: Stop_DruidBounce_Theme
+      guid: 9e570ba01c77024cb4c48d674e62aaf2
+      id: 4020472470
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bbc14059b1abc1438a0d024ccd4556a0
+      - ElementName: Stop_DruidBounce_Theme
+        ObjectType: 3
+        guid: 9e570ba01c77024cb4c48d674e62aaf2
+      Path: Events/Default Work Unit/Stop_DruidBounce_Theme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:

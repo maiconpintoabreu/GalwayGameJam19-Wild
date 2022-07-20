@@ -102,6 +102,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_DruidBounce_Theme" ID="{A00B579E-771C-4C02-B4C4-8D674E62AAF2}">
+					<ChildrenList>
+						<Action Name="" ID="{86CD6933-F2E7-4D5D-A874-1BAC7FB48F0F}" ShortID="288425279">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DruidBounce_Theme" ID="{49DD5370-C400-4643-86B2-4DCD4FA9DA21}" WorkUnitID="{51B4F312-E4C9-4AAE-B525-005B42EA2EFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

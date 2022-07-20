@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_PLACE_CARD = 1633448952U;
         static const AkUniqueID PLAY_SEAL = 4262365201U;
         static const AkUniqueID PLAY_TRANSFORM_PLAYER = 1456305894U;
+        static const AkUniqueID STOP_DRUIDBOUNCE_THEME = 4020472470U;
     } // namespace EVENTS
 
     namespace SWITCHES

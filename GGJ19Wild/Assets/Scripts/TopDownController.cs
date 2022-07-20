@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TopDownController : MonoBehaviour
 {
+    //Audio
+    public AK.Wwise.Event PlayTransformSounds;
+    //
     private int hendCardsLimit = 3;
     public List<CardModel> handCards;
     List<CardModel> NormalCardDeck;
@@ -13,6 +16,8 @@ public class TopDownController : MonoBehaviour
     private bool isMoving = false;
     public bool isAlive = true;
     private Animator animator;
+
+  
 
     // Start is called before the first frame update
     void Start()
@@ -86,6 +91,9 @@ public class TopDownController : MonoBehaviour
         {
             if (this.handCards[0] && this.handCards[0].cardAction != "")
             {
+                //Audio
+                PlayTransformSounds.Post(gameObject);
+                //
                 this.isMoving = true;
                 StartCoroutine(WaitForCasting());
             }
@@ -116,6 +124,8 @@ public class TopDownController : MonoBehaviour
         }
     }
     public void Die(){
+       
+
         this.isAlive = false;
     }
     public void GetDamage(string damageType)

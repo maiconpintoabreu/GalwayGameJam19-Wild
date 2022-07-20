@@ -180,19 +180,47 @@ PrefabInstance:
       value: UI
       objectReference: {fileID: 0}
     - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1495793059}
     - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 328552441}
+    - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: restartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StopMusicPlaying
       objectReference: {fileID: 0}
     - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameOverManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlaySound, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818109452790953165, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6524505308765547840, guid: c0569a29b1975f34b89d4c6cdf75197e, type: 3}
@@ -278,6 +306,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8005439441809574850, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
   m_PrefabInstance: {fileID: 859142044}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &328552441 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+  m_PrefabInstance: {fileID: 859142044}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328552436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40895ae42f4b94dcd8a259493f42f698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &451422932
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +509,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3934c325ccc024927b501bc613123274, type: 3}
   m_Name: 
@@ -969,6 +1008,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1261847489
       objectReference: {fileID: 0}
+    - target: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: StopMusic.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a3408aa5389b4ec5815005673291b8e, type: 2}
     - target: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
       propertyPath: PlaySounds.WwiseObjectReference
       value: 

@@ -21,7 +21,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3476658803">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1699517507">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -30,15 +30,15 @@
 					<IncludedMemoryFiles>
 						<File Id="174036916" Language="SFX">
 							<ShortName>Bedsheet Swishes 4.wav</ShortName>
-							<Path>SFX/Bedsheet Swishes 4_E1491B14.wem</Path>
+							<Path>SFX/Bedsheet Swishes 4_0328FBBB.wem</Path>
 						</File>
 						<File Id="352311364" Language="SFX">
 							<ShortName>Bedsheet Swishes 4.wav</ShortName>
-							<Path>SFX/Bedsheet Swishes 4_F45BABD1.wem</Path>
+							<Path>SFX/Bedsheet Swishes 4_5FDB6F11.wem</Path>
 						</File>
 						<File Id="1010964508" Language="SFX">
 							<ShortName>Bedsheet Swishes 4.wav</ShortName>
-							<Path>SFX/Bedsheet Swishes 4_1F62E9F6.wem</Path>
+							<Path>SFX/Bedsheet Swishes 4_C5FAECBD.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -118,6 +118,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="4020472470" Name="Stop_DruidBounce_Theme" ObjectPath="\Events\Default Work Unit\Stop_DruidBounce_Theme" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="3627369475" Name="AnimalForm" ObjectPath="\Switches\Default Work Unit\AnimalForm" GUID="{8B437802-45DB-4B84-82F7-382037C0176A}">
