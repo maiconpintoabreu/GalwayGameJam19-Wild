@@ -12,6 +12,7 @@ public class GoalModule : MonoBehaviour
         //When something enters this object's trigger collider, check if it is the ball GameObject.
         if (otherObject.name == "Player")
         {
+            FindObjectOfType<AudioManager>().PlayOneShot("UIStartSFX");
             SceneManager.LoadScene(this.nextLevel);
         }
     }
