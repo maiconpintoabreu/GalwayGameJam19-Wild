@@ -35,5 +35,6 @@ jobs:
         with:
           targetPlatform: WebGL
           projectPath: ./GGJ19Wild/
+          allowDirtyBuild: true
    
 
