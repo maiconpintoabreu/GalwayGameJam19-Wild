@@ -5,45 +5,59 @@ using UnityEngine;
 public class PlaySound : MonoBehaviour
 {
     //Wwise(Matt)
-    // public AK.Wwise.Event PlaySounds;
+    //public AK.Wwise.Event PlaySounds;
     // public AK.Wwise.Event PlayFlyingSounds;
-    // public AK.Wwise.Event PlaySwimmingSounds;
-    // public AK.Wwise.Event PlayDiggingSounds;
+    //public AK.Wwise.Event PlaySwimmingSounds;
+    //public AK.Wwise.Event PlayDiggingSounds;
     // public AK.Wwise.Event PlayRustlingSounds;
-    // // Music
-    // public AK.Wwise.Event Music;
+    // Music
+    //public AK.Wwise.Event Music;
     //
     // Start is called before the first frame update
     void Start()
     {
         //Music Start
         //Music.Post(gameObject);
-        
+
+        //FindObjectOfType<AudioManager>().PlayOneShot("Music");
+
     }
 
-    public void PlaySFX()
+    public void PlayTransformSFX()
     {
         //PlaySounds.Post(gameObject);
+        FindObjectOfType<AudioManager>().PlayOneShot("TransformSFX");
     }
+
+    public void PlayCardSFX()
+   {
+    //PlaySounds.Post(gameObject);
+  FindObjectOfType<AudioManager>().PlayOneShot("CardSFX");
+   }
 
     public void PlayFlyingSFX()
     {
-        //PlayFlyingSounds.Post(gameObject);
+        FindObjectOfType<AudioManager>().PlayOneShot("FlyingSFX");
     }
 
     public void PlaySwimmingSFX()
     {
-        //PlaySwimmingSounds.Post(gameObject);
+        FindObjectOfType<AudioManager>().PlayOneShot("SwimmingSFX");
     }
 
     public void PlayDiggingSFX()
     {
-        //PlayDiggingSounds.Post(gameObject);
+        FindObjectOfType<AudioManager>().PlayOneShot("DiggingSFX");
     }
 
     public void PlayRustlingSFX()
     {
-        //PlayRustlingSounds.Post(gameObject);
+        FindObjectOfType<AudioManager>().PlayOneShot("RustlingSFX");
+    }
+
+    public void PlayUIRestartSFX()
+    {
+        FindObjectOfType<AudioManager>().PlayOneShot("UIRestartSFX");
     }
 
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum WildTypeEnum {None=0, Bird=1, Seal=2, Fox=3, Deer=4}
+public enum WildTypeEnum { None = 0, Bird = 1, Seal = 2, Fox = 3, Deer = 4 }
 
 public class TopDownController : MonoBehaviour
 {
@@ -20,11 +20,12 @@ public class TopDownController : MonoBehaviour
     private Animator animator;
     private string currentState;
 
-  
+
 
     // Start is called before the first frame update
     void Start()
     {
+
         animator = GetComponent<Animator>();
     }
     void Awake()
@@ -32,11 +33,15 @@ public class TopDownController : MonoBehaviour
         this.isAlive = true;
         this.NormalCardDeck = new List<CardModel>();
         this.WildCardDeck = new List<CardModel>();
-        for(var i = 0; i < this.AllCards.Count; i++){
+        for (var i = 0; i < this.AllCards.Count; i++)
+        {
             CardModel element = this.AllCards[i];
-            if(element.cardType == "Normal"){
+            if (element.cardType == "Normal")
+            {
                 this.NormalCardDeck.Add(element);
-            }else if(element.cardType == "Wild"){
+            }
+            else if (element.cardType == "Wild")
+            {
                 this.WildCardDeck.Add(element);
             }
         }
@@ -49,7 +54,7 @@ public class TopDownController : MonoBehaviour
         if (this.isMoving && this.isAlive)
         {
             int direction = -1;
-            switch(this.handCards[0].cardAction)
+            switch (this.handCards[0].cardAction)
             {
                 case "WalkRight":
                     dir.x = 1;
@@ -88,6 +93,7 @@ public class TopDownController : MonoBehaviour
             {
                 //Audio
                 //PlayTransformSounds.Post(gameObject);
+                FindObjectOfType<AudioManager>().PlayOneShot("TransformSFX");
                 //
                 this.isMoving = true;
                 StartCoroutine(WaitForCasting());
@@ -102,6 +108,9 @@ public class TopDownController : MonoBehaviour
             {
                 if (this.NormalCardDeck.Count > 0)
                 {
+                    //Audio
+                    FindObjectOfType<AudioManager>().PlayOneShot("CardSFX");
+                    //
                     int cardIndex = Random.Range(0, this.NormalCardDeck.Count);
                     this.handCards[0] = this.NormalCardDeck[cardIndex];
                     this.NormalCardDeck.RemoveAt(cardIndex);
@@ -111,6 +120,9 @@ public class TopDownController : MonoBehaviour
             {
                 if (this.WildCardDeck.Count > 0)
                 {
+                    //Audio
+                    FindObjectOfType<AudioManager>().PlayOneShot("CardSFX");
+                    //
                     int cardIndex = Random.Range(0, this.WildCardDeck.Count);
                     this.handCards[0] = this.WildCardDeck[cardIndex];
                     this.WildCardDeck.RemoveAt(cardIndex);
@@ -118,8 +130,9 @@ public class TopDownController : MonoBehaviour
             }
         }
     }
-    public void Die(){
-       
+    public void Die()
+    {
+
 
         this.isAlive = false;
     }
@@ -128,10 +141,11 @@ public class TopDownController : MonoBehaviour
         //TODO: check if correct card for the tile
         switch (damageType)
         {
-            
+
             case "Water":
-                if(this.animator.GetInteger("MovementType") != 1 && this.animator.GetInteger("MovementType") != 2)
+                if (this.animator.GetInteger("MovementType") != 1 && this.animator.GetInteger("MovementType") != 2)
                 {
+                    FindObjectOfType<AudioManager>().PlayOneShot("PlayerDamageSFX");
                     this.Die();
                 }
                 break;
@@ -154,7 +168,7 @@ public class TopDownController : MonoBehaviour
     void ChangeAnimationState(int direction, int movementType, bool isMoving)
     {
         string id = direction.ToString() + movementType.ToString() + isMoving.ToString();
-        if(this.currentState == id) return;
+        if (this.currentState == id) return;
 
         animator.SetInteger("Direction", direction);
         animator.SetInteger("MovementType", movementType);
