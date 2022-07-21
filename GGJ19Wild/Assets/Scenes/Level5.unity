@@ -947,6 +947,10 @@ PrefabInstance:
       value: 1261847489
       objectReference: {fileID: 0}
     - target: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 494482970177905720, guid: 3ef9c963ad45d36479997d10a4fb84e7, type: 3}
       propertyPath: Music.WwiseObjectReference
       value: 
       objectReference: {fileID: 0}
