@@ -27,6 +27,8 @@ jobs:
         # uses: game-ci/unity-builder@2652cb78a7f9424999e3ebef90a55c35a8c7f080
         uses: game-ci/unity-builder@v2.0.4
         with:
-          projectPath: "./GGJ19Wild"
+          targetPlatform: WebGL
+          unityVersion: 2020.3.22f1
+          projectPath: GGJ19Wild
    
 
