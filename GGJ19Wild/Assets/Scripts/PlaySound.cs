@@ -55,11 +55,17 @@ public class PlaySound : MonoBehaviour
         FindObjectOfType<AudioManager>().PlayOneShot("RustlingSFX");
     }
 
+    //UI SFX
+
     public void PlayUIRestartSFX()
     {
         FindObjectOfType<AudioManager>().PlayOneShot("UIRestartSFX");
     }
 
+    public void PlayUIStartSFX()
+    {
+        FindObjectOfType<AudioManager>().PlayOneShot("UIStartSFX");
+    }
 
     //Music Stop
     public void StopMusicPlaying()
