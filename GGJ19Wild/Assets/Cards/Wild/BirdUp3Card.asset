@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e676123bc5e135645aa61e39932377e2, type: 3}
-  m_Name: DeathCard
+  m_Name: BirdUp3Card
   m_EditorClassIdentifier: 
-  cardName: Death
+  cardName: Bird3
   cardAction: WalkUp
   cardType: Wild
-  description: Fly Up Far
-  number: 5
+  description: Fly Up 5 units
+  number: 3
   movementType: 1
   sprite: {fileID: -3056297102037108793, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}

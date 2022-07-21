@@ -53,11 +53,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   AllCards:
+  - {fileID: 11400000, guid: a6c9a8f618575a542b9d1c46f838fd4e, type: 2}
+  - {fileID: 11400000, guid: b6032f05bef11f74cb0c274866b4d2f8, type: 2}
+  - {fileID: 11400000, guid: 3e4d60c19119098469ad4e6a82f4fe2e, type: 2}
+  - {fileID: 11400000, guid: b410c51198904394bb4c4795234c199f, type: 2}
+  - {fileID: 11400000, guid: cd694c3a4b4dcce4a8ba4ff47b64b746, type: 2}
   - {fileID: 11400000, guid: 159c9c31a840e1a4187b8eb90e70be6a, type: 2}
-  - {fileID: 11400000, guid: 4c8d369e201eb9040b362253e2b967d8, type: 2}
-  - {fileID: 11400000, guid: 2024dbf468371f64a94f114b94286aca, type: 2}
-  - {fileID: 11400000, guid: 0355148af54b38c41bb32c3d14564e37, type: 2}
-  - {fileID: 11400000, guid: 159c9c31a840e1a4187b8eb90e70be6a, type: 2}
+  - {fileID: 11400000, guid: cb7ff5b94ef85c34182cfcdb7260027a, type: 2}
   - {fileID: 11400000, guid: 4c8d369e201eb9040b362253e2b967d8, type: 2}
   - {fileID: 11400000, guid: 2024dbf468371f64a94f114b94286aca, type: 2}
   - {fileID: 11400000, guid: 0355148af54b38c41bb32c3d14564e37, type: 2}

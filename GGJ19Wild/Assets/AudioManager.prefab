@@ -51,8 +51,8 @@ MonoBehaviour:
     volume: 1
     pitch: 1
   - source: {fileID: 0}
-    name: 
-    clip: {fileID: 0}
+    name: GoalSFX
+    clip: {fileID: 8300000, guid: 05f353717c44e40e78158f576f91074b, type: 3}
     volume: 1
     pitch: 1
   - source: {fileID: 0}

@@ -6,13 +6,18 @@ using UnityEngine.SceneManagement;
 public class GoalModule : MonoBehaviour
 {
     [SerializeField] string nextLevel;
+    AudioManager audioManager;
+    void Awake() 
+    {
+        this.audioManager = FindObjectOfType<AudioManager>();
+    }
 
     void OnTriggerEnter2D(Collider2D otherObject)
     {
         //When something enters this object's trigger collider, check if it is the ball GameObject.
         if (otherObject.name == "Player")
         {
-            FindObjectOfType<AudioManager>().PlayOneShot("GoalSFX");
+            this.audioManager.PlayOneShot("GoalSFX");
             StartCoroutine(WaitForSound());
             // SceneManager.LoadScene(this.nextLevel);
 

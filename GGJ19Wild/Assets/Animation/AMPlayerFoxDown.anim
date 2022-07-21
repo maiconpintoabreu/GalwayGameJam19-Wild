@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AMPlayerFlyUp
+  m_Name: AMPlayerFoxDown
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -48,11 +48,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 6553067835864064338, guid: 678bc194f8a9a4ae7ab31fb82672427c, type: 3}
+      value: {fileID: 1781089699803207561, guid: 5867fbec7eb484331a6dde565c5739fd, type: 3}
     - time: 0.33333334
-      value: {fileID: -904454266164499378, guid: 678bc194f8a9a4ae7ab31fb82672427c, type: 3}
+      value: {fileID: -3601424974416595827, guid: 5867fbec7eb484331a6dde565c5739fd, type: 3}
     - time: 0.6666667
-      value: {fileID: 90184819396653742, guid: 678bc194f8a9a4ae7ab31fb82672427c, type: 3}
+      value: {fileID: 5310582720661501246, guid: 5867fbec7eb484331a6dde565c5739fd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -79,9 +79,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 6553067835864064338, guid: 678bc194f8a9a4ae7ab31fb82672427c, type: 3}
-    - {fileID: -904454266164499378, guid: 678bc194f8a9a4ae7ab31fb82672427c, type: 3}
-    - {fileID: 90184819396653742, guid: 678bc194f8a9a4ae7ab31fb82672427c, type: 3}
+    - {fileID: 1781089699803207561, guid: 5867fbec7eb484331a6dde565c5739fd, type: 3}
+    - {fileID: -3601424974416595827, guid: 5867fbec7eb484331a6dde565c5739fd, type: 3}
+    - {fileID: 5310582720661501246, guid: 5867fbec7eb484331a6dde565c5739fd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -136,7 +136,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: PlayFlyingSFX
+    functionName: PlayDiggingSFX
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
