@@ -22,10 +22,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: game-ci/unity-builder@v2.0.4
+      - name: Test
+        run: |
+          ls -la
+          cd ./GGJ19Wild
+          ls -la
+      - name: Unity - Builder
+        uses: game-ci/unity-builder@v2.0.4
         with:
           targetPlatform: WebGL
-      - name: Unity - Builder
-      - working-directory: ./GGJ19Wild
+          projectPath: ./GGJ19Wild/
    
 
