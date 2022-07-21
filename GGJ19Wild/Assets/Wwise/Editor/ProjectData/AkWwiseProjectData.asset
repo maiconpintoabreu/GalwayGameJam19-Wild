@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 822161fc445f3946a453380d9cd3bd4d
     GuidInternal: 
-    m_lastTime: -8585436138064775808
+    m_lastTime: -8585432157084775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 6463d73c79a97e4ca5ef115e0f1e2637
     GuidInternal: 
-    m_lastTime: -8585436138064775808
+    m_lastTime: -8585432157124775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: b34aa397e24c584cb29287d8e6ca189f
     GuidInternal: 
-    m_lastTime: -8585433374784775808
+    m_lastTime: -8585432157084775808
     List:
     - name: Main
       guid: 9add598b56148c4fbf0218f8bd93cbc9
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: bbc14059b1abc1438a0d024ccd4556a0
     GuidInternal: 
-    m_lastTime: -8585433361254775808
+    m_lastTime: -8585432157144775808
     List:
     - name: Play_Bird
       guid: 13b746e15f26954eb7f82a12f6eb4ad7
@@ -278,7 +278,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: af78c99c65b35740ad3258712e75eac0
     GuidInternal: 
-    m_lastTime: -8585436138064775808
+    m_lastTime: -8585432157144775808
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
@@ -292,7 +292,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: cc5e70c68b5a8a4fb81d513113bfc613
     GuidInternal: 
-    m_lastTime: -8585436138064775808
+    m_lastTime: -8585432157084775808
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
@@ -306,7 +306,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: dd1ee5832ba3734ab321ca26ca95cdcc
     GuidInternal: 
-    m_lastTime: -8585435912964775808
+    m_lastTime: -8585432157084775808
     List:
     - name: AnimalForm
       guid: 0278438bdb45844b82f7382037c0176a
@@ -418,10 +418,10 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: f83b615a6b665c45b6251acec35b0042
     GuidInternal: 
-    m_lastTime: -8585436138064775808
+    m_lastTime: -8585432157084775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000002000000030000000500000006000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

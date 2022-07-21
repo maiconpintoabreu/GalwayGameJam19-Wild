@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9122444978466589408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9122444978466589410}
+  - component: {fileID: 9122444978466589409}
+  - component: {fileID: 9122444978466589411}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9122444978466589410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9122444978466589408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 998.0888, y: -0.34174204, z: 74.92186}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9122444978466589409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9122444978466589408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73030659da2c145198efae2ce929ca1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - source: {fileID: 0}
+    name: TransformSFX
+    clip: {fileID: 8300000, guid: 973ff7c5cadbb440386d23f239497be0, type: 3}
+    volume: 1
+    pitch: 1
+  - source: {fileID: 0}
+    name: 
+    clip: {fileID: 0}
+    volume: 1
+    pitch: 1
+  - source: {fileID: 0}
+    name: CardSFX
+    clip: {fileID: 8300000, guid: 1d0bd93d9208745beb610498603824c4, type: 3}
+    volume: 1
+    pitch: 1
+  - source: {fileID: 0}
+    name: FlyingSFX
+    clip: {fileID: 8300000, guid: baa619ff258e946518dd82d5660e3911, type: 3}
+    volume: 1
+    pitch: 1
+  - source: {fileID: 0}
+    name: SwimmingSFX
+    clip: {fileID: 8300000, guid: 7b6d60d6c1a6647c59bd5becae0a2ee6, type: 3}
+    volume: 1
+    pitch: 1
+  - source: {fileID: 0}
+    name: DiggingSFX
+    clip: {fileID: 8300000, guid: 19ae03828ccad4a6b80701cf2352df56, type: 3}
+    volume: 1
+    pitch: 1
+  - source: {fileID: 0}
+    name: RustlingSFX
+    clip: {fileID: 8300000, guid: 935a496987c234ef899970d408c87701, type: 3}
+    volume: 1
+    pitch: 1
+  - source: {fileID: 0}
+    name: PlayerDamageSFX
+    clip: {fileID: 8300000, guid: 1d0bd93d9208745beb610498603824c4, type: 3}
+    volume: 1
+    pitch: 1
+  - source: {fileID: 0}
+    name: UIRestartSFX
+    clip: {fileID: 8300000, guid: d99fd5cef7e8248249a9dc4371544bc3, type: 3}
+    volume: 1
+    pitch: 1
+--- !u!82 &9122444978466589411
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9122444978466589408}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
