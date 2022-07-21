@@ -180,9 +180,29 @@ PrefabInstance:
       value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
       propertyPath: sounds.Array.data[2].clip
       value: 
       objectReference: {fileID: 8300000, guid: deab839cd38404f04aa207eaae58879d, type: 3}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.data[10].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 05f353717c44e40e78158f576f91074b, type: 3}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.data[10].name
+      value: GoalSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.data[10].pitch
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.data[10].volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9122444978466589410, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -276,7 +296,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5db8b0090ced44835975f4bfaa47af06, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
