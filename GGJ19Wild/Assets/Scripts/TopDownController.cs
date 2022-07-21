@@ -10,11 +10,10 @@ public class TopDownController : MonoBehaviour
     //Audio
     //public AK.Wwise.Event PlayTransformSounds;
     //
-    private int handCardsLimit = 3;
     public List<CardModel> handCards;
     List<CardModel> NormalCardDeck;
-    List<CardModel> WildCardDeck;
-    [SerializeField] List<CardModel> AllCards;
+    public List<CardModel> WildCardDeck;
+    public List<CardModel> AllCards;
     private bool isMoving = false;
     public bool isAlive = true;
     private Animator animator;
@@ -85,10 +84,13 @@ public class TopDownController : MonoBehaviour
         }
 
     }
-    public void UseCurrentCard()
+    public void UseCurrentCard(CardModel CardToUse)
     {
         if (!this.isMoving)
         {
+            if(CardToUse.cardAction != ""){
+                this.handCards[0] = CardToUse;
+            }
             if (this.handCards[0] && this.handCards[0].cardAction != "")
             {
                 //Audio
