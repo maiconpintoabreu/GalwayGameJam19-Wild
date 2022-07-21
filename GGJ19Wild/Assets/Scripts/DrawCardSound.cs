@@ -12,10 +12,10 @@ public class DrawCardSound : MonoBehaviour
         
     }
 
-    // public void DrawCardSFX()
-    // {
-    //     DrawCardSounds.Post(gameObject);
-    // }
+    public void DrawCardSFX()
+    {
+        //DrawCardSounds.Post(gameObject);
+    }
 
     // Update is called once per frame
     void Update()
