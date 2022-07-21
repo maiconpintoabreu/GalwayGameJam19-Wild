@@ -10,7 +10,7 @@ public class TopDownController : MonoBehaviour
     //Audio
     //public AK.Wwise.Event PlayTransformSounds;
     //
-    private int hendCardsLimit = 3;
+    private int handCardsLimit = 3;
     public List<CardModel> handCards;
     List<CardModel> NormalCardDeck;
     List<CardModel> WildCardDeck;
