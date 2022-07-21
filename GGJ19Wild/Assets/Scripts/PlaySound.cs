@@ -5,52 +5,52 @@ using UnityEngine;
 public class PlaySound : MonoBehaviour
 {
     //Wwise(Matt)
-    public AK.Wwise.Event PlaySounds;
-    public AK.Wwise.Event PlayFlyingSounds;
-    public AK.Wwise.Event PlaySwimmingSounds;
-    public AK.Wwise.Event PlayDiggingSounds;
-    public AK.Wwise.Event PlayRustlingSounds;
-    // Music
-    public AK.Wwise.Event Music;
+    // public AK.Wwise.Event PlaySounds;
+    // public AK.Wwise.Event PlayFlyingSounds;
+    // public AK.Wwise.Event PlaySwimmingSounds;
+    // public AK.Wwise.Event PlayDiggingSounds;
+    // public AK.Wwise.Event PlayRustlingSounds;
+    // // Music
+    // public AK.Wwise.Event Music;
     //
     // Start is called before the first frame update
     void Start()
     {
         //Music Start
-        Music.Post(gameObject);
+        //Music.Post(gameObject);
         
     }
 
     public void PlaySFX()
     {
-        PlaySounds.Post(gameObject);
+        //PlaySounds.Post(gameObject);
     }
 
     public void PlayFlyingSFX()
     {
-        PlayFlyingSounds.Post(gameObject);
+        //PlayFlyingSounds.Post(gameObject);
     }
 
     public void PlaySwimmingSFX()
     {
-        PlaySwimmingSounds.Post(gameObject);
+        //PlaySwimmingSounds.Post(gameObject);
     }
 
     public void PlayDiggingSFX()
     {
-        PlayDiggingSounds.Post(gameObject);
+        //PlayDiggingSounds.Post(gameObject);
     }
 
     public void PlayRustlingSFX()
     {
-        PlayRustlingSounds.Post(gameObject);
+        //PlayRustlingSounds.Post(gameObject);
     }
 
 
     //Music Stop
     public void StopMusicPlaying()
     {
-        Music.Stop(gameObject);
+        //Music.Stop(gameObject);
     }
 
 }

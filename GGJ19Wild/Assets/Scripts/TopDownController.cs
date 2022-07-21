@@ -8,7 +8,7 @@ public enum WildTypeEnum {None=0, Bird=1, Seal=2, Fox=3, Deer=4}
 public class TopDownController : MonoBehaviour
 {
     //Audio
-    public AK.Wwise.Event PlayTransformSounds;
+    //public AK.Wwise.Event PlayTransformSounds;
     //
     private int hendCardsLimit = 3;
     public List<CardModel> handCards;
@@ -87,7 +87,7 @@ public class TopDownController : MonoBehaviour
             if (this.handCards[0] && this.handCards[0].cardAction != "")
             {
                 //Audio
-                PlayTransformSounds.Post(gameObject);
+                //PlayTransformSounds.Post(gameObject);
                 //
                 this.isMoving = true;
                 StartCoroutine(WaitForCasting());
