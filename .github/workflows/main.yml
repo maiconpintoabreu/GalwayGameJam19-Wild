@@ -29,6 +29,6 @@ jobs:
         with:
           targetPlatform: WebGL
           unityVersion: 2020.3.22f1
-          projectPath: GGJ19Wild
+          projectPath: ./GGJ19Wild
    
 
