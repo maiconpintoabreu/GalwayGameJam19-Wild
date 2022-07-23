@@ -28,7 +28,11 @@ public class GoalModule : MonoBehaviour
 
             //yield on a new YieldInstruction that waits for 2 seconds.
             yield return new WaitForSeconds(0.7f);
-            SceneManager.LoadScene(this.nextLevel);
+            Camera camera = FindObjectOfType<Camera>();
+            AudioSource audioSource = camera.GetComponent (typeof (AudioSource)) as AudioSource;
+            audioSource.enabled = false;
+            FindObjectOfType<AudioManager>().PlayOneShot("PlayerVictorySFX");
+            //SceneManager.LoadScene(this.nextLevel);
         }
     }
 }

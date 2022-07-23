@@ -112,6 +112,9 @@ public class CardManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             rt.anchorMin = new Vector2(0, 0);
             rt.anchorMax = new Vector2(0, 0);
             rt.sizeDelta = new Vector2 (0, 0);
+            foreach (Transform child in transform) {
+                GameObject.Destroy(child.gameObject);
+            }
         }
     }
  }

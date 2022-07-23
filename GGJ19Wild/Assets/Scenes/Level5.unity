@@ -3616,6 +3616,10 @@ PrefabInstance:
       value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
       propertyPath: sounds.Array.data[1].name
       value: GoalSFX
       objectReference: {fileID: 0}
@@ -3623,6 +3627,22 @@ PrefabInstance:
       propertyPath: sounds.Array.data[2].clip
       value: 
       objectReference: {fileID: 8300000, guid: deab839cd38404f04aa207eaae58879d, type: 3}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.data[10].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b6cdbbc723972374e9f704f7df677c55, type: 3}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.data[10].name
+      value: PlayerVictorySFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.data[10].pitch
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122444978466589409, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
+      propertyPath: sounds.Array.data[10].volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9122444978466589410, guid: 58446b4f2a6bc4ea582ce4e21f886eb1, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5046,6 +5066,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6869728457394107938, guid: 162fc640aacdac44f9349f30bbfe816e, type: 3}
       propertyPath: m_HorizontalFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8136848242147988044, guid: 162fc640aacdac44f9349f30bbfe816e, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8858766735752363234, guid: 162fc640aacdac44f9349f30bbfe816e, type: 3}
