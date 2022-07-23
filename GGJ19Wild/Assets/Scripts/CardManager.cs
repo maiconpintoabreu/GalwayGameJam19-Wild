@@ -6,9 +6,11 @@ public class CardManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
  {
     private bool mouse_over = false;
     public CardModel cardModel;
+    public Sprite buttonSprite;
     private RectTransform rt;
     private Image image;
     public TopDownController playerController;
+    private bool cardSet = false;
 
     void Awake()
     {
@@ -21,10 +23,71 @@ public class CardManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             GameObject.Destroy(child.gameObject);
         }
     }
+    void setCardValues()
+    {
+        if(this.cardModel && !this.cardSet)
+        {
+            this.cardSet = true;
+            this.image.sprite = this.buttonSprite;
+            GameObject newCardImage = DefaultControls.CreateImage(new DefaultControls.Resources());
+            var cardImage = newCardImage.GetComponent (typeof (Image)) as Image;
+            cardImage.sprite = this.cardModel.sprite;
+            var cardImageRt = newCardImage.GetComponent (typeof (RectTransform)) as RectTransform;
+            cardImageRt.anchoredPosition = transform.position;
+            cardImageRt.anchorMin = new Vector2(0, 0);
+            cardImageRt.anchorMax = new Vector2(1, 1);
+            cardImageRt.pivot = new Vector2(0.5f, 0.5f);
+            cardImageRt.sizeDelta = new Vector2 (100, 100);
+            cardImageRt.position = new Vector3 (0, 0, 0);
+
+            //Set Animal on the card
+            GameObject newArrowImage = DefaultControls.CreateImage(new DefaultControls.Resources());
+            cardImage = newArrowImage.GetComponent (typeof (Image)) as Image;
+            cardImage.sprite = this.cardModel.spriteArrow;
+            cardImageRt = newArrowImage.GetComponent (typeof (RectTransform)) as RectTransform;
+            cardImageRt.anchoredPosition = transform.position;
+            cardImageRt.anchorMin = new Vector2(0, 0);
+            cardImageRt.anchorMax = new Vector2(1, 1);
+            cardImageRt.pivot = new Vector2(0.5f, 0.5f);
+            cardImageRt.sizeDelta = new Vector2 (100, 100);
+            cardImageRt.position = new Vector3 (0, 0, 0);
+
+            //Set Animal on the card
+            GameObject newAnimalImage = DefaultControls.CreateImage(new DefaultControls.Resources());
+            cardImage = newAnimalImage.GetComponent (typeof (Image)) as Image;
+            cardImage.sprite = this.cardModel.spriteAnimal;
+            cardImageRt = newAnimalImage.GetComponent (typeof (RectTransform)) as RectTransform;
+            cardImageRt.anchoredPosition = transform.position;
+            cardImageRt.anchorMin = new Vector2(0, 0);
+            cardImageRt.anchorMax = new Vector2(1, 1);
+            cardImageRt.pivot = new Vector2(0.5f, 0.5f);
+            cardImageRt.sizeDelta = new Vector2 (100, 100);
+            cardImageRt.position = new Vector3 (0, 0, 0);
+            
+
+            //Set Number on the card
+            GameObject newNumberImage = DefaultControls.CreateImage(new DefaultControls.Resources());
+            cardImage = newNumberImage.GetComponent (typeof (Image)) as Image;
+            cardImage.sprite = this.cardModel.getNumber();
+            cardImageRt = newNumberImage.GetComponent (typeof (RectTransform)) as RectTransform;
+            cardImageRt.anchoredPosition = transform.position;
+            cardImageRt.anchorMin = new Vector2(0, 0);
+            cardImageRt.anchorMax = new Vector2(1, 1);
+            cardImageRt.pivot = new Vector2(0.5f, 0.5f);
+            cardImageRt.sizeDelta = new Vector2 (100, 100);
+            cardImageRt.position = new Vector3 (0, 0, 0);
+
+
+            newCardImage.transform.SetParent(transform, false);
+            newNumberImage.transform.SetParent(transform, false);
+            newArrowImage.transform.SetParent(transform, false);
+            newAnimalImage.transform.SetParent(transform, false);
+        }
+    }
  
     void Update()
     {
-        this.image.sprite = this.cardModel.sprite;
+        this.setCardValues();
         if (mouse_over)
         {
             rt.sizeDelta = new Vector2 (200, 200);

@@ -18,4 +18,16 @@ MonoBehaviour:
   description: Fly Up 5 units
   number: 3
   movementType: 1
-  sprite: {fileID: -3056297102037108793, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+  sprite: {fileID: 21300000, guid: 939e21c10a949124c99d8e7ffa660d2a, type: 3}
+  spriteArrow: {fileID: 21300000, guid: f2e9aeb769a5cc0468f05cacc975ae8f, type: 3}
+  spriteAnimal: {fileID: 21300000, guid: d2727a9517f0c3b46860bdac0d4f9d40, type: 3}
+  spriteNumbers:
+  - {fileID: 21300000, guid: 8555758546a055b48902fb98f03fe850, type: 3}
+  - {fileID: 21300000, guid: 9b82149372ab6204188bcb533442f557, type: 3}
+  - {fileID: 21300000, guid: 644de88c4e46b3247bcd9524d59d8cce, type: 3}
+  - {fileID: 21300000, guid: a9c53ba2a9dedac4cad3541fff71a637, type: 3}
+  - {fileID: 21300000, guid: 7d26864a37a545446ab1df57d5c45169, type: 3}
+  - {fileID: 21300000, guid: 32ab65ea260836647ba9e37cdf8df0d3, type: 3}
+  - {fileID: 21300000, guid: 88d21365028a04e43b35d4d8c0eaef5b, type: 3}
+  - {fileID: 21300000, guid: 333c16b9d6c6f99429b3e1b84849f698, type: 3}
+  - {fileID: 21300000, guid: cbe411dcc8e74964eb4aa56838ebdd11, type: 3}

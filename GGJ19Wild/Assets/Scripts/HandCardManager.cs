@@ -11,6 +11,8 @@ public class HandCardManager : MonoBehaviour, IPointerEnterHandler, IPointerExit
     private bool mouse_over = false;
     private RectTransform rt;
 
+    public Sprite buttonSprite;
+
     void Awake()
     {
         rt = GetComponent (typeof (RectTransform)) as RectTransform;
@@ -21,8 +23,9 @@ public class HandCardManager : MonoBehaviour, IPointerEnterHandler, IPointerExit
             var tempCard = playerController.AllCards[i];
             GameObject newButton = DefaultControls.CreateButton(new DefaultControls.Resources());
             newButton.AddComponent(typeof(CardManager));
-            newButton.GetComponent<CardManager>().cardModel = tempCard;
+            newButton.GetComponent<CardManager>().buttonSprite = this.buttonSprite;
             newButton.GetComponent<CardManager>().playerController = playerController;
+            newButton.GetComponent<CardManager>().cardModel = tempCard;
             newButton.transform.SetParent(transform, false);
         }
     }

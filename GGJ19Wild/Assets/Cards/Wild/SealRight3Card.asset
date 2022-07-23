@@ -18,4 +18,16 @@ MonoBehaviour:
   description: Swim Right 5 units
   number: 3
   movementType: 2
-  sprite: {fileID: -4596500826337777618, guid: e3f23dce8cd5fc34eb929bac992917a3, type: 3}
+  sprite: {fileID: 21300000, guid: 939e21c10a949124c99d8e7ffa660d2a, type: 3}
+  spriteArrow: {fileID: 21300000, guid: 6c1e0a9b61a31f74788a06d2924fcf85, type: 3}
+  spriteAnimal: {fileID: 21300000, guid: eef6d5edd79d4884895298a187e85fdd, type: 3}
+  spriteNumbers:
+  - {fileID: 21300000, guid: 8555758546a055b48902fb98f03fe850, type: 3}
+  - {fileID: 21300000, guid: 9b82149372ab6204188bcb533442f557, type: 3}
+  - {fileID: 21300000, guid: 644de88c4e46b3247bcd9524d59d8cce, type: 3}
+  - {fileID: 21300000, guid: a9c53ba2a9dedac4cad3541fff71a637, type: 3}
+  - {fileID: 21300000, guid: 7d26864a37a545446ab1df57d5c45169, type: 3}
+  - {fileID: 21300000, guid: 32ab65ea260836647ba9e37cdf8df0d3, type: 3}
+  - {fileID: 21300000, guid: 88d21365028a04e43b35d4d8c0eaef5b, type: 3}
+  - {fileID: 21300000, guid: 333c16b9d6c6f99429b3e1b84849f698, type: 3}
+  - {fileID: 21300000, guid: cbe411dcc8e74964eb4aa56838ebdd11, type: 3}
