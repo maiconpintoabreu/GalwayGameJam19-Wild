@@ -52,6 +52,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  WildCardDeck: []
   AllCards:
   - {fileID: 11400000, guid: a6c9a8f618575a542b9d1c46f838fd4e, type: 2}
   - {fileID: 11400000, guid: b6032f05bef11f74cb0c274866b4d2f8, type: 2}
@@ -61,8 +62,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 159c9c31a840e1a4187b8eb90e70be6a, type: 2}
   - {fileID: 11400000, guid: cb7ff5b94ef85c34182cfcdb7260027a, type: 2}
   - {fileID: 11400000, guid: 4c8d369e201eb9040b362253e2b967d8, type: 2}
-  - {fileID: 11400000, guid: 2024dbf468371f64a94f114b94286aca, type: 2}
-  - {fileID: 11400000, guid: 0355148af54b38c41bb32c3d14564e37, type: 2}
   isAlive: 1
 --- !u!114 &494482970177905720
 MonoBehaviour:
