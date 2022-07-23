@@ -36,9 +36,9 @@ public class HandCardManager : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
          if (mouse_over)
          {
-            rt.position = Vector3.Lerp(transform.position, new Vector3 (0, 0, 0), 2 * Time.deltaTime);
+            rt.position = Vector3.Lerp(transform.position, new Vector3 (transform.position.x, 0, 0), 2 * Time.deltaTime);
          }else{;
-            rt.position = Vector3.Lerp(transform.position, new Vector3 (0, -50, 0), 2 * Time.deltaTime);
+            rt.position = Vector3.Lerp(transform.position, new Vector3 (transform.position.x, -50, 0), 2 * Time.deltaTime);
          }
     }
      public void OnPointerEnter(PointerEventData eventData)

@@ -36,6 +36,8 @@ public class CardManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             cardImageRt.anchoredPosition = transform.position;
             cardImageRt.anchorMin = new Vector2(0, 0);
             cardImageRt.anchorMax = new Vector2(1, 1);
+            // cardImageRt.offsetMax = new Vector2(0, 0);
+            // cardImageRt.offsetMin = new Vector2(0, 0);
             cardImageRt.pivot = new Vector2(0.5f, 0.5f);
             cardImageRt.sizeDelta = new Vector2 (100, 100);
             cardImageRt.position = new Vector3 (0, 0, 0);
@@ -44,38 +46,38 @@ public class CardManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             GameObject newArrowImage = DefaultControls.CreateImage(new DefaultControls.Resources());
             cardImage = newArrowImage.GetComponent (typeof (Image)) as Image;
             cardImage.sprite = this.cardModel.spriteArrow;
-            cardImageRt = newArrowImage.GetComponent (typeof (RectTransform)) as RectTransform;
-            cardImageRt.anchoredPosition = transform.position;
-            cardImageRt.anchorMin = new Vector2(0, 0);
-            cardImageRt.anchorMax = new Vector2(1, 1);
-            cardImageRt.pivot = new Vector2(0.5f, 0.5f);
-            cardImageRt.sizeDelta = new Vector2 (100, 100);
-            cardImageRt.position = new Vector3 (0, 0, 0);
+            var newImageRt = newArrowImage.GetComponent (typeof (RectTransform)) as RectTransform;
+            newImageRt.anchoredPosition = cardImageRt.position;
+            newImageRt.anchorMin = cardImageRt.anchorMin;
+            newImageRt.anchorMax = cardImageRt.anchorMax;
+            newImageRt.pivot = cardImageRt.pivot;
+            newImageRt.sizeDelta = cardImageRt.sizeDelta;
+            newImageRt.position = cardImageRt.position;
 
             //Set Animal on the card
             GameObject newAnimalImage = DefaultControls.CreateImage(new DefaultControls.Resources());
             cardImage = newAnimalImage.GetComponent (typeof (Image)) as Image;
             cardImage.sprite = this.cardModel.spriteAnimal;
-            cardImageRt = newAnimalImage.GetComponent (typeof (RectTransform)) as RectTransform;
-            cardImageRt.anchoredPosition = transform.position;
-            cardImageRt.anchorMin = new Vector2(0, 0);
-            cardImageRt.anchorMax = new Vector2(1, 1);
-            cardImageRt.pivot = new Vector2(0.5f, 0.5f);
-            cardImageRt.sizeDelta = new Vector2 (100, 100);
-            cardImageRt.position = new Vector3 (0, 0, 0);
+            newImageRt = newAnimalImage.GetComponent (typeof (RectTransform)) as RectTransform;
+            newImageRt.anchoredPosition = cardImageRt.position;
+            newImageRt.anchorMin = cardImageRt.anchorMin;
+            newImageRt.anchorMax = cardImageRt.anchorMax;
+            newImageRt.pivot = cardImageRt.pivot;
+            newImageRt.sizeDelta = cardImageRt.sizeDelta;
+            newImageRt.position = cardImageRt.position;
             
 
             //Set Number on the card
             GameObject newNumberImage = DefaultControls.CreateImage(new DefaultControls.Resources());
             cardImage = newNumberImage.GetComponent (typeof (Image)) as Image;
             cardImage.sprite = this.cardModel.getNumber();
-            cardImageRt = newNumberImage.GetComponent (typeof (RectTransform)) as RectTransform;
-            cardImageRt.anchoredPosition = transform.position;
-            cardImageRt.anchorMin = new Vector2(0, 0);
-            cardImageRt.anchorMax = new Vector2(1, 1);
-            cardImageRt.pivot = new Vector2(0.5f, 0.5f);
-            cardImageRt.sizeDelta = new Vector2 (100, 100);
-            cardImageRt.position = new Vector3 (0, 0, 0);
+            newImageRt = newNumberImage.GetComponent (typeof (RectTransform)) as RectTransform;
+            newImageRt.anchoredPosition = cardImageRt.position;
+            newImageRt.anchorMin = cardImageRt.anchorMin;
+            newImageRt.anchorMax = cardImageRt.anchorMax;
+            newImageRt.pivot = cardImageRt.pivot;
+            newImageRt.sizeDelta = cardImageRt.sizeDelta;
+            newImageRt.position = cardImageRt.position;
 
 
             newCardImage.transform.SetParent(transform, false);
