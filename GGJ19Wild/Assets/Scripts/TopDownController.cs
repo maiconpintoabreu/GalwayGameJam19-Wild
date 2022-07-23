@@ -84,7 +84,7 @@ public class TopDownController : MonoBehaviour
         }
 
     }
-    public void UseCurrentCard(CardModel CardToUse)
+    public bool UseCurrentCard(CardModel CardToUse)
     {
         if (!this.isMoving)
         {
@@ -99,8 +99,10 @@ public class TopDownController : MonoBehaviour
                 //
                 this.isMoving = true;
                 StartCoroutine(WaitForCasting());
+                return true;
             }
         }
+        return false;
     }
     public void CardSelected(string deckName)
     {

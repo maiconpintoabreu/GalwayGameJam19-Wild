@@ -107,8 +107,11 @@ public class CardManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         mouse_over = false;
     }
     void TaskOnClick(){
-        this.playerController.UseCurrentCard(this.cardModel);
-        this.enabled = false;
-        rt.sizeDelta = new Vector2 (0, 0);
+        if(this.playerController.UseCurrentCard(this.cardModel)){
+            this.enabled = false;
+            rt.anchorMin = new Vector2(0, 0);
+            rt.anchorMax = new Vector2(0, 0);
+            rt.sizeDelta = new Vector2 (0, 0);
+        }
     }
  }
